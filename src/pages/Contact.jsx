@@ -26,7 +26,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Teléfono",
-      info: "+54 11 4567-8900",
+      info: "+54 9351 4567-8900",
       description: "Lunes a Viernes 9:00 - 18:00"
     },
     {
@@ -38,7 +38,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Oficina",
-      info: "Av. Corrientes 1234, CABA",
+      info: "Av. Goyeneche, CBA",
       description: "Showroom y oficina técnica"
     },
     {

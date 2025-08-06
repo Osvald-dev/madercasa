@@ -190,7 +190,7 @@ const Models = () => {
                 <div className="relative">
                   <img  
                     alt={model.name}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-64 object-cover text-white group-hover:scale-110 transition-transform duration-500"
                    src={model.image} />
                   
                   <div className="absolute top-4 left-4">
@@ -209,36 +209,36 @@ const Models = () => {
 
                 <div className="p-8">
                   <h3 className="text-2xl font-bold text-gray-800 mb-3">{model.name}</h3>
-                  <p className="text-gray-600 mb-6">{model.description}</p>
+                  <p className="text-white-600 mb-6">{model.description}</p>
 
                   {/* Specs */}
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div className="flex items-center space-x-2">
-                      <Maximize size={16} className="text-amber-600" />
-                      <span className="text-sm text-gray-600">{model.area}</span>
+                      <Maximize size={16} className="tex-blue-600" />
+                      <span className="text-sm text-white-600">{model.area}</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <Home size={16} className="text-amber-600" />
-                      <span className="text-sm text-gray-600">{model.bedrooms} dorm.</span>
+                      <Home size={16} className="text-blue-600" />
+                      <span className="text-sm text-white-600">{model.bedrooms} dorm.</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <Users size={16} className="text-amber-600" />
-                      <span className="text-sm text-gray-600">{model.bathrooms} baños</span>
+                      <Users size={16} className="text-blue-600" />
+                      <span className="text-sm text-white-600">{model.bathrooms} baños</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <Calendar size={16} className="text-amber-600" />
-                      <span className="text-sm text-gray-600">{model.buildTime}</span>
+                      <Calendar size={16} className="text-blue-600" />
+                      <span className="text-sm text-white-600">{model.buildTime}</span>
                     </div>
                   </div>
 
                   {/* Features */}
                   <div className="mb-6">
-                    <h4 className="font-semibold text-gray-800 mb-3">Características destacadas:</h4>
+                    <h4 className="font-semibold text-black-800 mb-3">Características destacadas:</h4>
                     <div className="grid grid-cols-2 gap-2">
                       {model.features.map((feature, idx) => (
                         <div key={idx} className="flex items-center space-x-2">
                           <div className="w-2 h-2 bg-#1e3448 rounded-full"></div>
-                          <span className="text-sm text-gray-600">{feature}</span>
+                          <span className="text-sm text-white-600">{feature}</span>
                         </div>
                       ))}
                     </div>
