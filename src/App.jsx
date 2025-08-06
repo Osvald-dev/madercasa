@@ -13,7 +13,7 @@ import WhatsAppFloat from '@/components/WhatsAppFloat';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/madercasa">
       <div className="min-h-screen">
         <Helmet>
           <title>Mader Casa - Construcción CLT Innovadora en Argentina</title>

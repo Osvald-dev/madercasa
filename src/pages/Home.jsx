@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, TreePine, Shield, Zap, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import img1 from '../../assets/img/2.jpg';
+
+
 
 const Home = () => {
   const features = [
@@ -92,7 +95,7 @@ const Home = () => {
                 <img  
                   alt="Casa moderna de madera CLT con diseño contemporáneo"
                   className="w-full h-[500px] object-cover"
-                  src='../../assets/img/2.jpg'
+                  src={img1}
                   />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
@@ -184,17 +187,17 @@ const Home = () => {
               {
                 title: "Casa Familiar Moderna",
                 description: "Diseño contemporáneo con espacios amplios",
-                image: "../../assets/img/7.jpg"
+                image:'../../assets/img/9.jpg'
               },
               {
                 title: "Cabaña de Montaña",
                 description: "Perfecta integración con el entorno natural",
-                image: "../../assets/img/8.jpg"
+                image:'../../assets/img/7.jpg'
               },
               {
                 title: "Vivienda Modular",
                 description: "Flexibilidad y personalización total",
-                image: "../../assets/img/9.jpg"
+                image:'../../assets/img/8.jpg'
               }
             ].map((project, index) => (
               <motion.div
