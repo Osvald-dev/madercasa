@@ -191,6 +191,7 @@ logger.error = (msg, options) => {
 
 export default defineConfig({
 	customLogger: logger,
+	base: '/madercasa/',
 	plugins: [
 		...(isDev ? [inlineEditPlugin(), editModeDevPlugin()] : []),
 		react(),
