@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { Users, Target, Award, Globe, TreePine, Building } from 'lucide-react';
-
+import imgD from '../../assets/img/1-a.jpg'
 const About = () => {
   const values = [
     {
@@ -101,7 +101,7 @@ const About = () => {
                 <img  
                   alt="Equipo de Mader Casa trabajando en construcción CLT"
                   className="w-full h-[500px] object-cover"
-                 src="https://images.unsplash.com/photo-1696028917579-e2533e60e029" />
+                 src={imgD} />
                 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               </div>

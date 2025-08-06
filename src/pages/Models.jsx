@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 import { Home, Users, Maximize, Calendar, ArrowRight, Filter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
+import imgR from '../../assets/img/3.jpg';
 
 const Models = () => {
   const { toast } = useToast();
@@ -319,7 +320,7 @@ const Models = () => {
                 <img  
                   alt="Proceso de personalización de casa CLT con planos y muestras"
                   className="w-full h-[400px] object-cover"
-                 src="https://images.unsplash.com/photo-1460447325427-ce3901d00a6d" />
+                 src={imgR} />
                 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 

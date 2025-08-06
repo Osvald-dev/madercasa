@@ -8,6 +8,8 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
+import imgE from '../../assets/img/5.jpg';
+import imgF from '../../assets/img/1-c.jpg';
 
 const Advantages = () => {
   const { toast } = useToast();
@@ -190,7 +192,7 @@ const Advantages = () => {
                 <img  
                   alt="Estructura CLT mostrando capas de madera laminada cruzada"
                   className="w-full h-[500px] object-cover"
-                 src="https://images.unsplash.com/photo-1691010740417-9a2b68b9a953" />
+                 src={imgF}/>
                 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 
@@ -376,7 +378,7 @@ const Advantages = () => {
                 <img  
                   alt="Proceso de fabricación CLT con maquinaria CNC de precisión"
                   className="w-full h-[400px] object-cover"
-                 src="https://images.unsplash.com/photo-1691010740417-9a2b68b9a953" />
+                 src={imgE}/>
                 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 

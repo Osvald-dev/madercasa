@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
+import imgH from '../../assets/img/1-a.jpg';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -329,7 +330,7 @@ const Contact = () => {
                 <img  
                   alt="Ubicación oficina Mader Casa en Buenos Aires"
                   className="w-full h-[300px] object-cover"
-                 src="https://images.unsplash.com/photo-1693243445290-0607c975d332" />
+                 src={imgH}/>
                 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 
