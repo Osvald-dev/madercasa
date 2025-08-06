@@ -4,6 +4,9 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { Users, Target, Award, Globe, TreePine, Building } from 'lucide-react';
 import imgD from '../../assets/img/1-a.jpg'
+import img1 from "../../assets/img/2-b.jpg";
+import img2 from "../../assets/img/2-a.jpg";
+import img3 from "../../assets/img/3-b.jpg";
 const About = () => {
   const values = [
     {
@@ -290,19 +293,19 @@ const About = () => {
                 name: "Ing. Carlos Mendoza",
                 role: "Director Técnico",
                 specialty: "Especialista en sistemas CLT",
-                image: "../../assets/img/2-b.jpg"
+                image: img1
               },
               {
                 name: "Arq. María González",
                 role: "Directora de Diseño",
                 specialty: "Arquitectura sustentable",
-                image: "../../assets/img/2-a.jpg"
+                image: img2
               },
               {
                 name: "Ing. Roberto Silva",
                 role: "Jefe de Obra",
                 specialty: "Construcción modular",
-                image: "../../assets/img/3-b.jpg"
+                image: img3
               }
             ].map((member, index) => (
               <motion.div

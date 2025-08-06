@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, TreePine, Shield, Zap, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import img1 from '../../assets/img/2.jpg';
-
+import img2 from '../../assets/img/9.jpg';
+import img3 from '../../assets/img/8.jpg';
+import img4 from '../../assets/img/7.jpg';
 
 
 const Home = () => {
@@ -187,17 +189,17 @@ const Home = () => {
               {
                 title: "Casa Familiar Moderna",
                 description: "Diseño contemporáneo con espacios amplios",
-                image:'../../assets/img/9.jpg'
+                image:img2
               },
               {
                 title: "Cabaña de Montaña",
                 description: "Perfecta integración con el entorno natural",
-                image:'../../assets/img/7.jpg'
+                image:img3
               },
               {
                 title: "Vivienda Modular",
                 description: "Flexibilidad y personalización total",
-                image:'../../assets/img/8.jpg'
+                image:img4
               }
             ].map((project, index) => (
               <motion.div

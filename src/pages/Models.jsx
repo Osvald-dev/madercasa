@@ -6,6 +6,12 @@ import { Home, Users, Maximize, Calendar, ArrowRight, Filter } from 'lucide-reac
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import imgR from '../../assets/img/3.jpg';
+import img1 from '../../assets/img/1.jpg';
+import img2 from '../../assets/img/2.jpg';
+import img3 from '../../assets/img/7.jpg';
+import img4 from '../../assets/img/8.jpg';
+import img5 from '../../assets/img/9.jpg';
+import img6 from '../../assets/img/10.jpg';
 
 const Models = () => {
   const { toast } = useToast();
@@ -30,7 +36,7 @@ const Models = () => {
       buildTime: "8 semanas",
       description: "Diseño familiar con amplios espacios y conexión directa con la naturaleza",
       features: ["Terraza panorámica", "Cocina integrada", "Dormitorio principal en suite", "Calefacción radiante"],
-      image: "../../assets/img/10.jpg"
+      image: img1
     },
     {
       id: 2,
@@ -43,7 +49,7 @@ const Models = () => {
       buildTime: "6 semanas",
       description: "Perfecta para parejas o como casa de fin de semana en entornos naturales",
       features: ["Diseño minimalista", "Ventanales panorámicos", "Loft opcional", "Deck exterior"],
-      image: "../../assets/img/9.jpg"
+      image: img2
     },
     {
       id: 3,
@@ -56,7 +62,7 @@ const Models = () => {
       buildTime: "12 semanas",
       description: "Máximo lujo y confort con terminaciones premium y tecnología integrada",
       features: ["Domótica completa", "Piscina integrada", "Garage doble", "Bodega climatizada"],
-      image: "../../assets/img/8.jpg"
+      image: img3
     },
     {
       id: 4,
@@ -69,7 +75,7 @@ const Models = () => {
       buildTime: "4 semanas",
       description: "Solución ideal para jóvenes profesionales o como oficina independiente",
       features: ["Espacio multifuncional", "Cocina americana", "Altillo de almacenaje", "Terraza privada"],
-      image: "../../assets/img/7.jpg"
+      image: img4
     },
     {
       id: 5,
@@ -82,7 +88,7 @@ const Models = () => {
       buildTime: "10 semanas",
       description: "Amplia casa familiar con espacios flexibles y gran área social",
       features: ["Sala de estar doble altura", "Cocina isla central", "Playroom", "Quincho cubierto"],
-      image: "../../assets/img/2.jpg"
+      image: img5
     },
     {
       id: 6,
@@ -95,7 +101,7 @@ const Models = () => {
       buildTime: "9 semanas",
       description: "Inspirada en chalets alpinos con máximo aislamiento térmico",
       features: ["Chimenea central", "Sauna privada", "Balcón panorámico", "Aislamiento superior"],
-      image: "../../assets/img/1.jpg"
+      image: img6
     }
   ];
 
