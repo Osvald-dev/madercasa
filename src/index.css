@@ -65,15 +65,15 @@ body {
 
 
 /* Títulos */
-h1, h2, h3, h4 {
+/* h1, h2, h3, h4 {
   color: var(--white);
-}
+} */
 
 /* Estilos visuales */
 .glass-effect {
-  background: rgba(30, 52, 72, 0.6);
+    
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1); 
 }
 
 .text-gradient {

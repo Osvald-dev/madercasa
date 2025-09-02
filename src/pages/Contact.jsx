@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
-import imgH from '../../assets/img/1-a.jpg';
+import imgH from '../../assets/img/galpon.png';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -26,19 +26,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Teléfono",
-      info: "+54 9351 4567-8900",
+      info: "+54 9 3513 72-8365",
       description: "Lunes a Viernes 9:00 - 18:00"
     },
     {
       icon: Mail,
       title: "Email",
       info: "info@madercasa.com.ar",
-      description: "Respuesta en 24 horas"
+      description: "Respuesta en 24hs"
     },
     {
       icon: MapPin,
-      title: "Oficina",
-      info: "Av. Goyeneche, CBA",
+      title: "Oficina y Show Room",
+      info: "Ruta 19 km 300 , CBA",
       description: "Showroom y oficina técnica"
     },
     {
@@ -59,10 +59,10 @@ const Contact = () => {
   ];
 
   const budgetRanges = [
-    "Hasta $50.000 USD",
-    "$50.000 - $100.000 USD",
-    "$100.000 - $200.000 USD",
-    "Más de $200.000 USD"
+    "Hasta $10.000 USD",
+    "$10.000 - $30.000 USD",
+    "$40.000 - $80.000 USD",
+    "Más de $100.000 USD"
   ];
 
   const timelineOptions = [
@@ -100,7 +100,7 @@ const Contact = () => {
     <div className="pt-16 lg:pt-20 overflow-x-hidden">
       <Helmet>
         <title>Contacto - Mader Casa | Consulta tu Proyecto CLT</title>
-        <meta name="description" content="Contacta con Mader Casa para tu proyecto CLT. Oficina en CABA, consultas técnicas gratuitas. Teléfono, email y formulario de contacto disponibles." />
+        <meta name="description" content="Contacta con Mader Casa para tu proyecto CLT. Oficina en CBA, consultas técnicas gratuitas. Teléfono, email y formulario de contacto disponibles." />
       </Helmet>
 
       {/* Hero Section */}
@@ -141,7 +141,7 @@ const Contact = () => {
                   transition={{ delay: index * 0.1 }}
                   className="p-6 rounded-xl shadow-wood hover-lift text-center"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-black-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <div className="w-12 h-12 bg-[#af823c] rounded-xl flex items-center justify-center mx-auto mb-4">
                     <Icon size={24} className="text-white" />
                   </div>
                   
@@ -222,7 +222,7 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
-                    placeholder="+54 11 1234-5678"
+                    placeholder=""
                   />
                 </div>
 
@@ -328,7 +328,7 @@ const Contact = () => {
               {/* Map Placeholder */}
               <div className="relative rounded-2xl overflow-hidden shadow-wood hover-lift">
                 <img  
-                  alt="Ubicación oficina Mader Casa en Buenos Aires"
+                  alt="Ubicación oficina Mader Casa en Córdoba"
                   className="w-full h-[300px] object-cover"
                  src={imgH}/>
                 
@@ -337,7 +337,7 @@ const Contact = () => {
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className=" rounded-lg p-4">
                     <h3 className="text-white font-semibold text-lg">Nuestra Oficina</h3>
-                    <p className="text-white/90 text-sm">Av. Corrientes 1234, CABA</p>
+                    <p className="text-white/90 text-sm">Ruta 19 km 300 , CBA</p>
                   </div>
                 </div>
               </div>
@@ -360,7 +360,7 @@ const Contact = () => {
                     "Servicio post-venta especializado"
                   ].map((service, index) => (
                     <div key={index} className="flex items-center space-x-3">
-                      <div className="w-6 h-6 bg-gradient-to-r from-amber-500 to-black-500 rounded-full flex items-center justify-center">
+                      <div className="w-6 h-6 nature-gradient rounded-full flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                       <span className="text-gray-700">{service}</span>
@@ -416,7 +416,7 @@ const Contact = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
-                onClick={() => window.location.href = 'tel:+541145678900'}
+                onClick={() => window.location.href = 'tel:+5493513728365'}
                 className="bg-white text-amber-700 hover:bg-gray-100 px-8 py-6 text-lg rounded-xl shadow-lg hover-lift"
               >
                 <Phone className="mr-2" size={20} />

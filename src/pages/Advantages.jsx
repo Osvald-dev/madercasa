@@ -165,7 +165,7 @@ const Advantages = () => {
               className="space-y-8"
             >
               <div className="space-y-4">
-                <span className="inline-block px-4 py-2 bg-gradient-to-r from--mader-orange-100 to-amber-100 text-white-800 rounded-full text-sm font-semibold">
+                <span className="inline-block px-4 py-2 bg-[#af823c] hover:bg-[#8b6032] text-white-800 rounded-full text-sm font-semibold">
                   🌲 Tecnología CLT
                 </span>
                 
@@ -194,7 +194,7 @@ const Advantages = () => {
                   className="w-full h-[500px] object-cover"
                  src={imgF}/>
                 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                <div className="absolute inset-0 bg-[#C3453]/30"></div>
                 
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="glass-effect rounded-lg p-4">
@@ -238,7 +238,7 @@ const Advantages = () => {
                   transition={{ delay: index * 0.1 }}
                   className="glass-effect p-8 rounded-2xl shadow-wood hover-lift group"
                 >
-                  <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to--mader-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-[#af823c] hover:bg-[#8b6032] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <Icon size={28} className="text-white" />
                   </div>
                   
@@ -280,7 +280,7 @@ const Advantages = () => {
           <div className="glass-effect rounded-2xl overflow-hidden shadow-wood">
             <div className="overflow-x-auto">
               <table className="w-full">
-                <thead className="bg-gradient-to-r from-amber-600 to--mader-orange-600 text-white">
+                <thead className="bg-[#af823c] hover:bg-[#8b6032] text-white">
                   <tr>
                     <th className="px-6 py-4 text-left font-semibold">Aspecto</th>
                     <th className="px-6 py-4 text-center font-semibold">Construcción Tradicional</th>
@@ -302,7 +302,7 @@ const Advantages = () => {
                       <td className="px-6 py-4 text-center text-gray-600">{comparison.traditional}</td>
                       <td className="px-6 py-4 text-center text-white-700 font-semibold">{comparison.clt}</td>
                       <td className="px-6 py-4 text-center">
-                        <span className="px-3 py-1 bg-gradient-to-r from-amber-500 to--mader-orange-500 text-white rounded-full text-sm font-semibold">
+                        <span className="px-3 py-1 bg-[#af823c] hover:bg-[#8b6032] text-white rounded-full text-sm font-semibold">
                           {comparison.improvement}
                         </span>
                       </td>
@@ -337,7 +337,7 @@ const Advantages = () => {
 
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-gradient-to-r from-amber-500 to--mader-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-[#af823c] hover:bg-[#8b6032] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <Building size={16} className="text-white" />
                   </div>
                   <div>
@@ -347,7 +347,7 @@ const Advantages = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-gradient-to-r from-amber-500 to--mader-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-[#af823c] hover:bg-[#8b6032] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <Shield size={16} className="text-white" />
                   </div>
                   <div>
@@ -357,7 +357,7 @@ const Advantages = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-gradient-to-r from-amber-500 to--mader-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-[#af823c] hover:bg-[#8b6032] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <Award size={16} className="text-white" />
                   </div>
                   <div>
@@ -424,7 +424,7 @@ const Advantages = () => {
                   transition={{ delay: index * 0.1 }}
                   className="text-center group"
                 >
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-amber-500 to--mader-orange-500 rounded-2xl flex items-center justify-center shadow-wood hover-lift group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-20 h-20 mx-auto mb-6 bg-[#af823c] hover:bg-[#8b6032] rounded-2xl flex items-center justify-center shadow-wood hover-lift group-hover:scale-110 transition-transform duration-300">
                     <Icon size={32} className="text-white" />
                   </div>
                   

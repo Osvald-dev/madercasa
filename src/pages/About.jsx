@@ -80,15 +80,15 @@ const About = () => {
                 <span className="inline-block px-4 py-2 bg-gradient-to-r from-white-100 to-amber-100 text-white-800 rounded-full text-sm font-semibold">
                   🏡 Nuestra Historia
                 </span>
-                
+
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                   <span className="text-gradient">Pioneros en</span>
                   <br />
                   <span className="text-white-800">Construcción CLT</span>
                 </h1>
-                
+
                 <p className="text-xl text-white-600 leading-relaxed">
-                  Somos la primera empresa en Argentina especializada en construcción con sistema CLT alemán. 
+                  Somos la primera empresa en Argentina especializada en construcción con sistema CLT alemán.
                   Combinamos tradición europea con innovación local para crear hogares excepcionales.
                 </p>
               </div>
@@ -101,11 +101,11 @@ const About = () => {
               className="relative"
             >
               <div className="relative rounded-2xl overflow-hidden shadow-wood hover-lift">
-                <img  
+                <img
                   alt="Equipo de Mader Casa trabajando en construcción CLT"
                   className="w-full h-[500px] object-cover"
-                 src={imgD} />
-                
+                  src={imgD} />
+
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               </div>
             </motion.div>
@@ -124,22 +124,22 @@ const About = () => {
               className="space-y-6"
             >
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-black-500 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#8b6032] rounded-xl flex items-center justify-center">
                   <Target size={24} className="text-white" />
                 </div>
                 <h2 className="text-3xl font-bold text-gradient">Nuestra Misión</h2>
               </div>
-              
+
               <p className="text-lg text-white-600 leading-relaxed">
-                Revolucionar la industria de la construcción en Argentina mediante la implementación 
-                del sistema CLT alemán, ofreciendo viviendas sustentables, resistentes y de alta calidad 
+                Revolucionar la industria de la construcción en Argentina mediante la implementación
+                del sistema CLT alemán, ofreciendo viviendas sustentables, resistentes y de alta calidad
                 que respeten el medio ambiente y mejoren la calidad de vida de nuestros clientes.
               </p>
-              
-              <div className="bg-gradient-to-r from--mader-orange-light-100 to-amber-100 p-6 rounded-xl">
-                <h3 className="font-semibold text-white-800 mb-2">Compromiso Ambiental</h3>
-                <p className="text-white-700">
-                  Cada proyecto contribuye a la reducción de la huella de carbono y promueve 
+
+              <div className="bg-gradient-to-r from-amber-100 to-white-100 p-6 rounded-xl">
+                <h3 className="font-semibold text-amber-800 mb-2">Compromiso Ambiental</h3>
+                <p className="text-amber-700">
+                  Cada proyecto contribuye a la reducción de la huella de carbono y promueve
                   la construcción sustentable en Argentina.
                 </p>
               </div>
@@ -153,22 +153,22 @@ const About = () => {
               className="space-y-6"
             >
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-white-500 to-amber-500 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#8b6032] to-amber-500 rounded-xl flex items-center justify-center">
                   <Globe size={24} className="text-white" />
                 </div>
                 <h2 className="text-3xl font-bold text-gradient">Nuestra Visión</h2>
               </div>
-              
+
               <p className="text-lg text-white-600 leading-relaxed">
-                Ser la empresa líder en construcción CLT en Latinoamérica, reconocida por la 
-                excelencia en diseño, calidad constructiva y compromiso ambiental, estableciendo 
+                Ser la empresa líder en construcción CLT en Latinoamérica, reconocida por la
+                excelencia en diseño, calidad constructiva y compromiso ambiental, estableciendo
                 nuevos estándares en la industria de la construcción sustentable.
               </p>
-              
+
               <div className="bg-gradient-to-r from-amber-100 to-white-100 p-6 rounded-xl">
                 <h3 className="font-semibold text-amber-800 mb-2">Innovación Continua</h3>
                 <p className="text-amber-700">
-                  Investigamos y desarrollamos constantemente nuevas técnicas y materiales 
+                  Investigamos y desarrollamos constantemente nuevas técnicas y materiales
                   para ofrecer las mejores soluciones constructivas.
                 </p>
               </div>
@@ -197,7 +197,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => {
               const Icon = value.icon;
-              
+
               return (
                 <motion.div
                   key={index}
@@ -207,10 +207,10 @@ const About = () => {
                   transition={{ delay: index * 0.1 }}
                   className="text-center group"
                 >
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-amber-500 to-white-500 rounded-2xl flex items-center justify-center shadow-wood hover-lift group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-20 h-20 mx-auto mb-6 nature-gradient rounded-2xl flex items-center justify-center shadow-wood hover-lift group-hover:scale-110 transition-transform duration-300">
                     <Icon size={32} className="text-white" />
                   </div>
-                  
+
                   <h3 className="text-xl font-bold text-white-800 mb-3">{value.title}</h3>
                   <p className="text-white-600">{value.description}</p>
                 </motion.div>
@@ -232,14 +232,15 @@ const About = () => {
             <h2 className="text-3xl lg:text-5xl font-bold text-gradient mb-6">
               Nuestro Camino
             </h2>
-            <p className="text-xl text-white-600 max-w-3xl mx-auto">
+            <p className="text-xl text-white max-w-3xl mx-auto">
               La evolución de Mader Casa desde sus inicios hasta convertirse en pionera del CLT
             </p>
           </motion.div>
 
           <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-amber-500 to-white-500 rounded-full"></div>
-            
+            {/* Línea central (solo visible en desktop) */}
+            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-amber-500 to-white rounded-full"></div>
+
             <div className="space-y-12">
               {timeline.map((item, index) => (
                 <motion.div
@@ -248,21 +249,32 @@ const About = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.2 }}
-                  className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
+                  className={`flex flex-col md:flex-row items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''
+                    }`}
                 >
-                  <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
+                  {/* Card */}
+                  <div
+                    className={`w-full md:w-1/2 ${index % 2 === 0
+                        ? 'md:pr-8 md:text-right'
+                        : 'md:pl-8 md:text-left'
+                      } text-center md:text-inherit`}
+                  >
                     <div className="glass-effect p-6 rounded-xl shadow-wood hover-lift">
-                      <span className="inline-block px-3 py-1 bg-gradient-to-r from-amber-500 to--mader-blue-500 text-white rounded-full text-sm font-semibold mb-3">
+                      <span className="inline-block px-3 py-1 bg-gradient-to-r from-amber-500 to-[#1e3448] text-white rounded-full text-sm font-semibold mb-3">
                         {item.year}
                       </span>
-                      <h3 className="text-xl font-bold text-white-800 mb-2">{item.title}</h3>
-                      <p className="text-white-600">{item.description}</p>
+                      <h3 className="text-xl font-bold text-white mb-2">
+                        {item.title}
+                      </h3>
+                      <p className="text-white">{item.description}</p>
                     </div>
                   </div>
-                  
-                  <div className="w-6 h-6 bg-gradient-to-br from-amber-500 to-white-500 rounded-full border-4 border-white shadow-lg z-10"></div>
-                  
-                  <div className="w-1/2"></div>
+
+                  {/* Punto del timeline */}
+                  <div className="w-6 h-6 bg-gradient-to-br from-amber-500 to-white rounded-full border-4 border-white shadow-lg z-10 my-6 md:my-0"></div>
+
+                  {/* Columna vacía solo en desktop */}
+                  <div className="hidden md:block w-1/2"></div>
                 </motion.div>
               ))}
             </div>
@@ -317,14 +329,14 @@ const About = () => {
                 className="text-center group"
               >
                 <div className="relative rounded-2xl overflow-hidden shadow-wood hover-lift mb-6">
-                  <img  
+                  <img
                     alt={member.name}
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                   src={member.image} />
-                  
+                    src={member.image} />
+
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
-                
+
                 <h3 className="text-xl font-bold text-white-800 mb-2">{member.name}</h3>
                 <p className="text-amber-600 font-semibold mb-1">{member.role}</p>
                 <p className="text-white-600 text-sm">{member.specialty}</p>

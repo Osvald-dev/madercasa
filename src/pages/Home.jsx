@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, TreePine, Shield, Zap, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import img1 from '../../assets/img/2.jpg';
-import img2 from '../../assets/img/9.jpg';
-import img3 from '../../assets/img/8.jpg';
-import img4 from '../../assets/img/7.jpg';
+import img1 from '../../assets/img/1-c.jpg';
+import img2 from '../../assets/img/ryp/m9.jpeg';
+import img3 from '../../assets/img/ryp/m11.jpeg';
+import img4 from '../../assets/img/ryp/m1.jpeg';
 
 
 const Home = () => {

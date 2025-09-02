@@ -69,7 +69,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 rounded-lg glass-effect"
+            className="text-white lg:hidden p-2 rounded-lg glass-effect"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
