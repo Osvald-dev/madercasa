@@ -2,9 +2,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
-import { 
-  TreePine, Shield, Zap, Thermometer, Clock, Recycle, 
-  Home, Award, Leaf, Building, CheckCircle, ArrowRight 
+import {
+  TreePine, Shield, Zap, Thermometer, Clock, Recycle,
+  Home, Award, Leaf, Building, CheckCircle, ArrowRight
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
@@ -140,11 +140,11 @@ const Advantages = () => {
   ];
 
   const handleLearnMore = () => {
-    toast({
-      title: "🚧 Esta función no está implementada aún",
-      description: " 🚀",
-      duration: 4000,
-    });
+    const phoneNumber = "5493513728365"; // número con código de país (sin + ni espacios)
+    const message = "¡Hola! Estoy interesado en recibir información técnica.";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+
   };
 
   return (
@@ -168,15 +168,15 @@ const Advantages = () => {
                 <span className="inline-block px-4 py-2 bg-[#af823c] hover:bg-[#8b6032] text-white-800 rounded-full text-sm font-semibold">
                   🌲 Tecnología CLT
                 </span>
-                
+
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                   <span className="text-gradient">Ventajas del</span>
                   <br />
                   <span className="text-gray-800">Sistema CLT</span>
                 </h1>
-                
+
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  El Cross Laminated Timber representa la evolución de la construcción en madera. 
+                  El Cross Laminated Timber representa la evolución de la construcción en madera.
                   Descubre por qué es la elección del futuro para construcción sustentable.
                 </p>
               </div>
@@ -189,13 +189,13 @@ const Advantages = () => {
               className="relative"
             >
               <div className="relative rounded-2xl overflow-hidden shadow-wood hover-lift">
-                <img  
+                <img
                   alt="Estructura CLT mostrando capas de madera laminada cruzada"
                   className="w-full h-[500px] object-cover"
-                 src={imgF}/>
-                
+                  src={imgF} />
+
                 <div className="absolute inset-0 bg-[#C3453]/30"></div>
-                
+
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="glass-effect rounded-lg p-4">
                     <h3 className="text-white font-semibold text-lg">Cross Laminated Timber</h3>
@@ -228,7 +228,7 @@ const Advantages = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {advantages.map((advantage, index) => {
               const Icon = advantage.icon;
-              
+
               return (
                 <motion.div
                   key={index}
@@ -241,10 +241,10 @@ const Advantages = () => {
                   <div className="w-16 h-16 bg-[#af823c] hover:bg-[#8b6032] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <Icon size={28} className="text-white" />
                   </div>
-                  
+
                   <h3 className="text-xl font-bold text-gray-800 mb-3">{advantage.title}</h3>
                   <p className="text-gray-600 mb-4">{advantage.description}</p>
-                  
+
                   <div className="space-y-2">
                     {advantage.details.map((detail, idx) => (
                       <div key={idx} className="flex items-start space-x-2">
@@ -328,10 +328,10 @@ const Advantages = () => {
               <h2 className="text-3xl lg:text-4xl font-bold text-gradient">
                 Tecnología Alemana Probada
               </h2>
-              
+
               <p className="text-lg text-gray-600">
-                El sistema CLT fue desarrollado en Austria y Alemania en los años 90. 
-                Hoy es el estándar de construcción sustentable en Europa, con más de 
+                El sistema CLT fue desarrollado en Austria y Alemania en los años 90.
+                Hoy es el estándar de construcción sustentable en Europa, con más de
                 30 años de experiencia y miles de proyectos exitosos.
               </p>
 
@@ -375,13 +375,13 @@ const Advantages = () => {
               className="relative"
             >
               <div className="relative rounded-2xl overflow-hidden shadow-wood hover-lift">
-                <img  
+                <img
                   alt="Proceso de fabricación CLT con maquinaria CNC de precisión"
                   className="w-full h-[400px] object-cover"
-                 src={imgE}/>
-                
+                  src={imgE} />
+
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                
+
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="glass-effect rounded-lg p-4">
                     <h3 className="text-white font-semibold text-lg">Fabricación CNC</h3>
@@ -414,7 +414,7 @@ const Advantages = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {certifications.map((cert, index) => {
               const Icon = cert.icon;
-              
+
               return (
                 <motion.div
                   key={index}
@@ -427,7 +427,7 @@ const Advantages = () => {
                   <div className="w-20 h-20 mx-auto mb-6 bg-[#af823c] hover:bg-[#8b6032] rounded-2xl flex items-center justify-center shadow-wood hover-lift group-hover:scale-110 transition-transform duration-300">
                     <Icon size={32} className="text-white" />
                   </div>
-                  
+
                   <h3 className="text-lg font-bold text-gray-800 mb-2">{cert.name}</h3>
                   <p className="text-gray-600 text-sm">{cert.description}</p>
                 </motion.div>
@@ -450,26 +450,26 @@ const Advantages = () => {
               ¿Convencido de las ventajas del CLT?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Descubre cómo podemos aplicar todas estas ventajas en tu próximo proyecto. 
+              Descubre cómo podemos aplicar todas estas ventajas en tu próximo proyecto.
               Solicita una consulta técnica personalizada.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
+              <Button
                 onClick={handleLearnMore}
                 className="bg-white text-amber-700 hover:bg-gray-100 px-8 py-6 text-lg rounded-xl shadow-lg hover-lift"
               >
                 Consulta Técnica Gratuita
                 <ArrowRight className="ml-2" size={20} />
               </Button>
-              
-              <Button 
+
+              {/* <Button 
                 onClick={handleLearnMore}
                 variant="outline" 
                 className="border-2 border-white text-white hover:bg-white hover:text-amber-700 px-8 py-6 text-lg rounded-xl"
               >
                 Descargar Catálogo Técnico
-              </Button>
+              </Button> */}
             </div>
           </motion.div>
         </div>

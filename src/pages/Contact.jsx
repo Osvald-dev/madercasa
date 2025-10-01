@@ -2,9 +2,9 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
-import { 
-  Phone, Mail, MapPin, Clock, MessageCircle, Send, 
-  User, Building, Calculator, Calendar 
+import {
+  Phone, Mail, MapPin, Clock, MessageCircle, Send,
+  User, Building, Calculator, Calendar
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
@@ -38,7 +38,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Oficina y Show Room",
-      info: "Ruta 19 km 300 , CBA",
+      info: "Ruta 19 km 317.5 , CBA",
       description: "Showroom y oficina técnica"
     },
     {
@@ -79,21 +79,56 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const formBody = new URLSearchParams(formData).toString();
+
+  try {
+    const response = await fetch("https://formspree.io/f/mwprkgan", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: formBody,
+    });
+
+    if (response.ok) {
+      toast({
+        title: "✅ Consulta enviada",
+        description: "Te responderemos en menos de 24hs.",
+        duration: 4000,
+      });
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        projectType: '',
+        budget: '',
+        timeline: '',
+        message: ''
+      });
+    } else {
+      toast({
+        title: "❌ Error al enviar",
+        description: "Por favor intenta nuevamente.",
+        duration: 4000,
+      });
+    }
+  } catch (error) {
     toast({
-      title: "🚧 Esta función no está implementada aún",
-      description: " 🚀",
+      title: "⚠️ Error de conexión",
+      description: "No se pudo enviar el formulario.",
       duration: 4000,
     });
-  };
+  }
+};
 
   const handleWhatsApp = () => {
-    toast({
-      title: "🚧 Esta función no está implementada aún",
-      description: " 🚀",
-      duration: 4000,
-    });
+    const phoneNumber = "5493513728365"; // número con código de país (sin + ni espacios)
+    const message = "¡Hola! Estoy interesado en recibir información.";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
   };
 
   return (
@@ -115,15 +150,15 @@ const Contact = () => {
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-black-100 to-amber-100 text-white-800 rounded-full text-sm font-semibold mb-6">
               📞 Hablemos de tu Proyecto
             </span>
-            
+
             <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">
               <span className="text-gradient">Contactanos</span>
               <br />
               <span className="text-gray-800">Hoy Mismo</span>
             </h1>
-            
+
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Estamos aquí para hacer realidad tu proyecto CLT. Consulta técnica gratuita, 
+              Estamos aquí para hacer realidad tu proyecto CLT. Consulta técnica gratuita,
               asesoramiento personalizado y presupuestos sin compromiso.
             </p>
           </motion.div>
@@ -132,7 +167,7 @@ const Contact = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {contactInfo.map((info, index) => {
               const Icon = info.icon;
-              
+
               return (
                 <motion.div
                   key={index}
@@ -144,7 +179,7 @@ const Contact = () => {
                   <div className="w-12 h-12 bg-[#af823c] rounded-xl flex items-center justify-center mx-auto mb-4">
                     <Icon size={24} className="text-white" />
                   </div>
-                  
+
                   <h3 className="font-semibold text-gray-800 mb-2">{info.title}</h3>
                   <p className="text-lg font-bold text-gradient mb-1">{info.info}</p>
                   <p className="text-sm text-gray-600">{info.description}</p>
@@ -171,7 +206,7 @@ const Contact = () => {
                   Solicita tu Consulta Gratuita
                 </h2>
                 <p className="text-gray-600">
-                  Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas 
+                  Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas
                   para discutir tu proyecto CLT.
                 </p>
               </div>
@@ -193,7 +228,7 @@ const Contact = () => {
                       placeholder="Tu nombre completo"
                     />
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
                       <Mail size={16} className="inline mr-2" />
@@ -244,7 +279,7 @@ const Contact = () => {
                       ))}
                     </select>
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
                       <Calculator size={16} className="inline mr-2" />
@@ -262,7 +297,7 @@ const Contact = () => {
                       ))}
                     </select>
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
                       <Calendar size={16} className="inline mr-2" />
@@ -298,15 +333,15 @@ const Contact = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button 
+                  <Button
                     type="submit"
                     className="flex-1 bg[#0000] to-gray-600 hover:from-amber-700 hover:to-black-700 text-black px-8 py-6 text-lg rounded-xl shadow-wood hover-lift"
                   >
                     Enviar Consulta
                     <Send className="ml-2" size={20} />
                   </Button>
-                  
-                  <Button 
+
+                  <Button
                     type="button"
                     onClick={handleWhatsApp}
                     className="bg-black-500 hover:bg-black-600 text-blacjk px-8 py-6 text-lg rounded-xl shadow-wood hover-lift"
@@ -327,13 +362,13 @@ const Contact = () => {
             >
               {/* Map Placeholder */}
               <div className="relative rounded-2xl overflow-hidden shadow-wood hover-lift">
-                <img  
+                <img
                   alt="Ubicación oficina Mader Casa en Córdoba"
                   className="w-full h-[300px] object-cover"
-                 src={imgH}/>
-                
+                  src={imgH} />
+
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                
+
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className=" rounded-lg p-4">
                     <h3 className="text-white font-semibold text-lg">Nuestra Oficina</h3>
@@ -347,7 +382,7 @@ const Contact = () => {
                 <h3 className="text-2xl font-bold text-gradient mb-6">
                   Servicios Incluidos
                 </h3>
-                
+
                 <div className="space-y-4">
                   {[
                     "Consulta técnica gratuita",
@@ -374,18 +409,18 @@ const Contact = () => {
                 <h3 className="text-2xl font-bold text-gradient mb-6">
                   Preguntas Frecuentes
                 </h3>
-                
+
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-white-800 mb-2">¿Cuánto tiempo toma un proyecto?</h4>
                     <p className="text-gray-600 text-sm">Desde el diseño hasta la entrega: 3-6 meses dependiendo del tamaño y complejidad.</p>
                   </div>
-                  
+
                   <div>
                     <h4 className="font-semibold text-white-800 mb-2">¿Incluyen los permisos?</h4>
                     <p className="text-gray-600 text-sm">Sí, gestionamos todos los permisos municipales y documentación técnica necesaria.</p>
                   </div>
-                  
+
                   <div>
                     <h4 className="font-semibold text-white-800 mb-2">¿Qué garantía ofrecen?</h4>
                     <p className="text-gray-600 text-sm">10 años en estructura CLT, 2 años en terminaciones y 1 año en instalaciones.</p>
@@ -410,22 +445,22 @@ const Contact = () => {
               ¿Preferís una llamada directa?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Nuestro equipo técnico está disponible para responder todas tus consultas 
+              Nuestro equipo técnico está disponible para responder todas tus consultas
               sobre construcción CLT de lunes a viernes.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
+              <Button
                 onClick={() => window.location.href = 'tel:+5493513728365'}
                 className="bg-white text-amber-700 hover:bg-gray-100 px-8 py-6 text-lg rounded-xl shadow-lg hover-lift"
               >
                 <Phone className="mr-2" size={20} />
                 Llamar Ahora
               </Button>
-              
-              <Button 
+
+              <Button
                 onClick={() => window.location.href = 'mailto:info@madercasa.com.ar'}
-                variant="outline" 
+                variant="outline"
                 className="border-2 border-white text-white hover:bg-white hover:text-amber-700 px-8 py-6 text-lg rounded-xl"
               >
                 <Mail className="mr-2" size={20} />

@@ -26,6 +26,15 @@ import img10 from '../../assets/img/ryp/m11.jpeg';
 import plan10 from '../../assets/img/ryp/plan11.pdf';
 import img11 from '../../assets/img/ryp/m12.jpeg';
 import plan11 from '../../assets/img/ryp/plan12.pdf';
+import img12 from '../../assets/img/ryp/H1.jpeg';
+import plan12 from '../../assets/img/ryp/H1.pdf';
+import img13 from '../../assets/img/ryp/H2.jpg';
+import plan13 from '../../assets/img/ryp/H2.pdf';
+import img14 from '../../assets/img/ryp/H3.jpeg';
+import plan14 from '../../assets/img/ryp/H3.pdf';
+import img15 from '../../assets/img/ryp/H4.jpeg';
+import plan15 from '../../assets/img/ryp/H4.pdf';
+
 
 
 const Models = () => {
@@ -171,7 +180,7 @@ const Models = () => {
       name: "Refugio Alpino",
       category: "luxury",
       price: "Desde $50.000 USD",
-      area: "117 m²",
+      area: "39.5 m²",
       bedrooms: 2,
       bathrooms: 1,
       buildTime: "5 semanas",
@@ -190,9 +199,65 @@ const Models = () => {
       bathrooms: 1,
       buildTime: "3 semanas",
       description: "Modulos habitacionales, totalmente funcionales y confortables",
-      features: ["Cocina comedor ", "Aislamiento superior", "iluminación ambietal"],
+      features: ["Cocina comedor ", "Aislamiento superior", "iluminación ambiental"],
       image: img11,
       plan: plan11
+    },
+    {
+      id: 12,
+      name: "H1 Mader Casa",
+      category: "family",
+      price: "Desde $60.000 USD",
+      area: "125.5 m²",
+      bedrooms: 3,
+      bathrooms: 2,
+      buildTime: "9 semanas",
+      description: "Vivienda familiar, totalmente funcional y confortable, minimalista",
+      features: ["Aislamiento superior", "iluminación ambiental", "Vestidor en habitación", "Cocina - Comedor amplio"],
+      image: img12,
+      plan: plan12
+    },
+    {
+      id: 13,
+      name: "H2 Mader Casa",
+      category: "luxury",
+      price: "Desde $68.000 USD",
+      area: "139.5 m²",
+      bedrooms: 3,
+      bathrooms: 2,
+      buildTime: "9 semanas",
+      description: "Vivienda familiar, totalmente funcional y confortable",
+      features: ["Aislamiento superior", "iluminación ambiental", "Vestidor en habitación", "Cocina - Comedor amplio"],
+      image: img13,
+      plan: plan13
+    },
+    {
+      id: 14,
+      name: "H3 Mader Casa",
+      category: "luxury",
+      price: "Desde $69.000 USD",
+      area: "140.5 m²",
+      bedrooms: 3,
+      bathrooms: 2,
+      buildTime: "10 semanas",
+      description: "Hermosa vivienda, totalmente funcional y confortable",
+      features: ["Aislamiento superior", "iluminación ambiental", "Vestidor en habitación", "Cocina - Comedor amplio"],
+      image: img14,
+      plan: plan14
+    },
+    {
+      id: 15,
+      name: "H4 Mader Casa",
+      category: "family",
+      price: "Desde $62.000 USD",
+      area: "128 m²",
+      bedrooms: 3,
+      bathrooms: 2,
+      buildTime: "9 semanas",
+      description: "Hermosa vivienda, totalmente funcional y confortable",
+      features: ["Aislamiento superior", "iluminación ambiental", "Vestidor en habitación", "Cocina - Comedor amplio"],
+      image: img15,
+      plan: plan15
     }
   ];
 

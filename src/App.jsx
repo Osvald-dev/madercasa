@@ -10,10 +10,13 @@ import Models from '@/pages/Models';
 import Advantages from '@/pages/Advantages';
 import Contact from '@/pages/Contact';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
+import ScrollToTop from "../src/lib/ScrollToTop";
+
 
 function App() {
   return (
     <Router basename="/madercasa">
+      <ScrollToTop />
       <div className="min-h-screen">
         <Helmet>
           <title>Mader Casa - Construcción CLT Innovadora en Argentina</title>

@@ -232,14 +232,14 @@ const About = () => {
             <h2 className="text-3xl lg:text-5xl font-bold text-gradient mb-6">
               Nuestro Camino
             </h2>
-            <p className="text-xl text-white max-w-3xl mx-auto">
+            <p className="text-xl text-gradient max-w-3xl mx-auto">
               La evolución de Mader Casa desde sus inicios hasta convertirse en pionera del CLT
             </p>
           </motion.div>
 
           <div className="relative">
             {/* Línea central (solo visible en desktop) */}
-            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-amber-500 to-white rounded-full"></div>
+            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-nature-gradient rounded-full"></div>
 
             <div className="space-y-12">
               {timeline.map((item, index) => (
@@ -260,13 +260,13 @@ const About = () => {
                       } text-center md:text-inherit`}
                   >
                     <div className="glass-effect p-6 rounded-xl shadow-wood hover-lift">
-                      <span className="inline-block px-3 py-1 bg-gradient-to-r from-amber-500 to-[#1e3448] text-white rounded-full text-sm font-semibold mb-3">
+                      <span className="inline-block px-3 bg-gradient py-1 text--mader-blue rounded-full text-sm font-semibold mb-3">
                         {item.year}
                       </span>
                       <h3 className="text-xl font-bold text-white mb-2">
                         {item.title}
                       </h3>
-                      <p className="text-white">{item.description}</p>
+                      <p className="text-black">{item.description}</p>
                     </div>
                   </div>
 
@@ -302,19 +302,19 @@ const About = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "Ing. Carlos Mendoza",
+                name: "Ing. Alberto Britez",
                 role: "Director Técnico",
                 specialty: "Especialista en sistemas CLT",
                 image: img1
               },
               {
-                name: "Arq. María González",
+                name: "Arq. Francis Lafont",
                 role: "Directora de Diseño",
                 specialty: "Arquitectura sustentable",
                 image: img2
               },
               {
-                name: "Ing. Roberto Silva",
+                name: "Ing. Exequiel Toledo",
                 role: "Jefe de Obra",
                 specialty: "Construcción modular",
                 image: img3
