@@ -220,105 +220,49 @@ const About = () => {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="section-padding">
-        <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl lg:text-5xl font-bold text-gradient mb-6">
-              Nuestro Camino
-            </h2>
-            <p className="text-xl text-gradient max-w-3xl mx-auto">
-              La evolución de Mader Casa desde sus inicios hasta convertirse en pionera del CLT
-            </p>
-          </motion.div>
-
-          <div className="relative">
-            {/* Línea central (solo visible en desktop) */}
-            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-nature-gradient rounded-full"></div>
-
-            <div className="space-y-12">
-              {timeline.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.2 }}
-                  className={`flex flex-col md:flex-row items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''
-                    }`}
-                >
-                  {/* Card */}
-                  <div
-                    className={`w-full md:w-1/2 ${index % 2 === 0
-                        ? 'md:pr-8 md:text-right'
-                        : 'md:pl-8 md:text-left'
-                      } text-center md:text-inherit`}
-                  >
-                    <div className="glass-effect p-6 rounded-xl shadow-wood hover-lift">
-                      <span className="inline-block px-3 bg-gradient py-1 text--mader-blue rounded-full text-sm font-semibold mb-3">
-                        {item.year}
-                      </span>
-                      <h3 className="text-xl font-bold text-white mb-2">
-                        {item.title}
-                      </h3>
-                      <p className="text-black">{item.description}</p>
-                    </div>
-                  </div>
-
-                  {/* Punto del timeline */}
-                  <div className="w-6 h-6 bg-gradient-to-br from-amber-500 to-white rounded-full border-4 border-white shadow-lg z-10 my-6 md:my-0"></div>
-
-                  {/* Columna vacía solo en desktop */}
-                  <div className="hidden md:block w-1/2"></div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+    
 
       {/* Team Section */}
-      <section className="section-padding bg-gradient-to-br from--mader-blue-50 to-amber-50">
-        <div className="container-custom">
+      <section className="section-padding bg-[#1e3448] relative overflow-hidden">
+        <div className="container-custom relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl lg:text-5xl font-bold text-gradient mb-6">
+            <h2 className="text-3xl lg:text-5xl font-bold text-[#af823c] mb-6">
               Nuestro Equipo
             </h2>
-            <p className="text-xl text-white-600 max-w-3xl mx-auto">
-              Profesionales especializados en construcción CLT y arquitectura sustentable
+            <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
+              En <strong>Mader Casa</strong> contamos con un equipo multidisciplinario de
+              ingenieros, arquitectos y especialistas en construcción sustentable.
+              Combinamos experiencia técnica, innovación y pasión por el diseño para
+              crear viviendas eficientes, seguras y duraderas bajo el sistema{" "}
+              <strong>CLT (Cross Laminated Timber)</strong>.
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "Ing. Alberto Britez",
-                role: "Director Técnico",
-                specialty: "Especialista en sistemas CLT",
-                image: img1
+                role: "Diseño Arquitectónico",
+                specialty:
+                  "Proyectos personalizados que maximizan la luz natural, el confort térmico y la integración con el entorno.",
+                image: img1,
               },
               {
-                name: "Arq. Francis Lafont",
-                role: "Directora de Diseño",
-                specialty: "Arquitectura sustentable",
-                image: img2
+                role: "Ingeniería y Estructura",
+                specialty:
+                  "Cálculo estructural y eficiencia constructiva con tecnología CLT de última generación.",
+                image: img2,
               },
               {
-                name: "Ing. Exequiel Toledo",
-                role: "Jefe de Obra",
-                specialty: "Construcción modular",
-                image: img3
-              }
+                role: "Gestión y Obra",
+                specialty:
+                  "Coordinación integral de obra y procesos industrializados que garantizan tiempos de ejecución óptimos.",
+                image: img3,
+              },
             ].map((member, index) => (
               <motion.div
                 key={index}
@@ -328,22 +272,44 @@ const About = () => {
                 transition={{ delay: index * 0.2 }}
                 className="text-center group"
               >
-                <div className="relative rounded-2xl overflow-hidden shadow-wood hover-lift mb-6">
+                <div className="relative rounded-2xl overflow-hidden shadow-lg hover-lift mb-6">
                   <img
-                    alt={member.name}
+                    alt={member.role}
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                    src={member.image} />
+                    src={member.image}
+                  />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
 
-                <h3 className="text-xl font-bold text-white-800 mb-2">{member.name}</h3>
-                <p className="text-amber-600 font-semibold mb-1">{member.role}</p>
-                <p className="text-white-600 text-sm">{member.specialty}</p>
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  {member.role}
+                </h3>
+                <p className="text-[#c49771] text-sm leading-relaxed px-4">
+                  {member.specialty}
+                </p>
               </motion.div>
             ))}
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-16 text-center max-w-4xl mx-auto text-white/80 leading-relaxed"
+          >
+            <p>
+              Cada proyecto de <strong>Mader Casa</strong> es el resultado de un
+              trabajo colaborativo, donde la precisión técnica se une al diseño
+              consciente. Apostamos por una{" "}
+              <strong>construcción sustentable</strong> que optimiza recursos,
+              respeta el entorno y redefine la manera de habitar.
+            </p>
+          </motion.div>
         </div>
+
+        {/* Efecto visual sutil de fondo */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1e3448] via-[#2a3f4f] to-[#5e5345] opacity-90 z-0" />
       </section>
     </div>
   );

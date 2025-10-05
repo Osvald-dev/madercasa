@@ -1,39 +1,46 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
-import { Home, Users, Maximize, Calendar, ArrowRight, Filter } from 'lucide-react';
+import {
+  Filter,
+  Maximize,
+  Home,
+  Users,
+  Calendar,
+  ArrowRight,
+} from "lucide-react";
 import { Button } from '@/components/ui/button';
 import imgR from '../../assets/img//3.jpg';
 import img1 from '../../assets/img/ryp/m1.jpeg';
-import plan1 from '../../assets/img/ryp/plan1.pdf';
+import plan1 from '../../assets/img/ryp/plan1.webp';
 import img2 from '../../assets/img/ryp/m2.jpeg';
-import plan2 from '../../assets/img/ryp/plan2.pdf';
+import plan2 from '../../assets/img/ryp/plan2.webp';
 import img3 from '../../assets/img/ryp/m4.jpeg';
-import plan3 from '../../assets/img/ryp/plan4.pdf';
+import plan3 from '../../assets/img/ryp/plan4.webp';
 import img4 from '../../assets/img/ryp/m5.jpeg';
-import plan4 from '../../assets/img/ryp/plan5.pdf';
+import plan4 from '../../assets/img/ryp/plan5.webp';
 import img5 from '../../assets/img/ryp/m6.jpeg';
-import plan5 from '../../assets/img/ryp/plan6.pdf';
+import plan5 from '../../assets/img/ryp/plan6.webp';
 import img6 from '../../assets/img/ryp/m7.jpeg';
-import plan6 from '../../assets/img/ryp/plan7.pdf';
+import plan6 from '../../assets/img/ryp/plan7.webp';
 import img7 from '../../assets/img/ryp/m8.jpeg';
-import plan7 from '../../assets/img/ryp/plan8.pdf';
+import plan7 from '../../assets/img/ryp/plan8.webp';
 import img8 from '../../assets/img/ryp/m9.jpeg';
-import plan8 from '../../assets/img/ryp/plan9.pdf';
+import plan8 from '../../assets/img/ryp/plan9.webp';
 import img9 from '../../assets/img/ryp/m10.jpeg';
-import plan9 from '../../assets/img/ryp/plan10.pdf';
+import plan9 from '../../assets/img/ryp/plan10.webp';
 import img10 from '../../assets/img/ryp/m11.jpeg';
-import plan10 from '../../assets/img/ryp/plan11.pdf';
+import plan10 from '../../assets/img/ryp/plan11.webp';
 import img11 from '../../assets/img/ryp/m12.jpeg';
-import plan11 from '../../assets/img/ryp/plan12.pdf';
+import plan11 from '../../assets/img/ryp/plan12.webp';
 import img12 from '../../assets/img/ryp/H1.jpeg';
-import plan12 from '../../assets/img/ryp/H1.pdf';
+import plan12 from '../../assets/img/ryp/H1.webp';
 import img13 from '../../assets/img/ryp/H2.jpg';
-import plan13 from '../../assets/img/ryp/H2.pdf';
+import plan13 from '../../assets/img/ryp/H2.webp';
 import img14 from '../../assets/img/ryp/H3.jpeg';
-import plan14 from '../../assets/img/ryp/H3.pdf';
+import plan14 from '../../assets/img/ryp/H3.webp';
 import img15 from '../../assets/img/ryp/H4.jpeg';
-import plan15 from '../../assets/img/ryp/H4.pdf';
+import plan15 from '../../assets/img/ryp/H4.webp';
 
 
 
@@ -115,7 +122,7 @@ const Models = () => {
       bathrooms: 1,
       buildTime: "4 semanas (Obra gris)",
       description: "Casa familiar ultra moderna con espacios flexibles y gran área social",
-      features: ["Sala de estar doble altura", "Cocina isla central", ],
+      features: ["Sala de estar doble altura", "Cocina isla central",],
       image: img5,
       plan: plan5
     },
@@ -282,6 +289,8 @@ const Models = () => {
     setSelectedPlan(null);
   };
 
+
+
   return (
     <div className="pt-16 lg:pt-20 overflow-x-hidden">
       <Helmet>
@@ -326,8 +335,8 @@ const Models = () => {
                 key={category.id}
                 onClick={() => setSelectedCategory(category.id)}
                 className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${selectedCategory === category.id
-                    ? 'bg-[#1e3448] text-white shadow-wood'
-                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
+                  ? 'bg-[#1e3448] text-white shadow-wood'
+                  : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
                   }`}
               >
                 <Filter size={16} className="inline mr-2" />
@@ -443,7 +452,7 @@ const Models = () => {
           onClick={handleClosePlan}
         >
           <div
-            className="relative bg-white rounded-2xl shadow-lg max-w-3xl w-full p-4"
+            className="relative bg-white rounded-2xl shadow-lg max-w-3xl w-[90%] max-h-[90vh] overflow-y-auto p-4"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -452,10 +461,10 @@ const Models = () => {
             >
               ✕
             </button>
-            <embed
+            <img
               src={selectedPlan}
-              type="application/pdf"
-              className="w-full h-[80vh] rounded-xl"
+              alt="Plano del modelo"
+              className="w-full h-auto max-h-[80vh] object-contain rounded-xl"
             />
           </div>
         </motion.div>
