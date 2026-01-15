@@ -74,7 +74,7 @@ const Models = () => {
     id: 2,
     name: "MC2",
     category: "compact",
-    area: "40.5 m²",
+    area: "31 m²",
     bedrooms: 1,
     bathrooms: 1,
     buildTime: "3 semanas (Obra gris)",
