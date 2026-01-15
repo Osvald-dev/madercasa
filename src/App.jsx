@@ -16,15 +16,15 @@ import ScrollToTop from "../src/lib/ScrollToTop";
 
 function App() {
   return (
-    <Router basename="/madercasa">
+    <Router basename="/">
       <ScrollToTop />
       <div className="min-h-screen">
         <Helmet>
-          <title>Mader Casa - Construcción CLT Innovadora en Argentina</title>
-          <meta name="description" content="Pioneros en Argentina en construcción con CLT (Cross Laminated Timber). Viviendas modulares, familiares y personalizadas con sistema alemán de muros entramados macizos." />
-          <meta name="keywords" content="CLT, Cross Laminated Timber, construcción madera, viviendas modulares, Argentina, sistema alemán, casas ecológicas" />
-          <meta property="og:title" content="Mader Casa - Construcción CLT Innovadora" />
-          <meta property="og:description" content="Viviendas modulares con sistema CLT alemán. Resistentes, aislantes y sustentables." />
+          <title>Mader Casa | Casas prefabricadas con sistema Wood Frame</title>
+          <meta name="description" content="Diseñamos y construimos viviendas con sistema Wood Frame. Construcción en seco, eficiente y de alta calidad, con materiales técnicos y alcance en toda Argentina." />
+          <meta name="keywords" content="casas prefabricadas, construcción en seco, sistema wood frame, viviendas modernas, casas industrializadas, construcción rápida, Argentina" />
+          <meta property="og:title" content="Mader Casa | Construcción en seco con sistema Wood Frame" />
+          <meta property="og:description" content="Viviendas prefabricadas diseñadas con sistema Wood Frame. Calidad constructiva, eficiencia y tiempos de obra optimizados en toda Argentina." />
           <meta property="og:type" content="website" />
         </Helmet>
         

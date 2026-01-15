@@ -191,7 +191,7 @@ logger.error = (msg, options) => {
 
 export default defineConfig({
 	customLogger: logger,
-	base: '/madercasa/',
+	base: '/',
 	plugins: [
 		...(isDev ? [inlineEditPlugin(), editModeDevPlugin()] : []),
 		react(),
@@ -211,7 +211,7 @@ export default defineConfig({
 		},
 	},
 	build: {
-		outDir: 'docs',
+		outDir: 'dist',
 		rollupOptions: {
 			external: [
 				'@babel/parser',

@@ -24,7 +24,7 @@ export default function Footer() {
         {/* Redes sociales */}
         <div className="flex items-center gap-5">
           <a
-            href="https://www.instagram.com/madercasa.clt"
+            href="https://www.instagram.com/madercasa.cconstrucciones"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:scale-110 transition-transform"

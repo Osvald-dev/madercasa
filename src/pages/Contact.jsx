@@ -38,7 +38,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Oficina y Show Room",
-      info: "Ruta 19 km 317.5 , CBA",
+      info: "Ruta 19 km 340 , CBA",
       description: "Showroom y oficina técnica"
     },
     {
@@ -79,50 +79,50 @@ const Contact = () => {
     });
   };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  const formBody = new URLSearchParams(formData).toString();
+    const formBody = new URLSearchParams(formData).toString();
 
-  try {
-    const response = await fetch("https://formspree.io/f/mwprkgan", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: formBody,
-    });
-
-    if (response.ok) {
-      toast({
-        title: "✅ Consulta enviada",
-        description: "Te responderemos en menos de 24hs.",
-        duration: 4000,
+    try {
+      const response = await fetch("https://formspree.io/f/mwprkgan", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: formBody,
       });
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        projectType: '',
-        budget: '',
-        timeline: '',
-        message: ''
-      });
-    } else {
+
+      if (response.ok) {
+        toast({
+          title: "✅ Consulta enviada",
+          description: "Te responderemos en menos de 24hs.",
+          duration: 4000,
+        });
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          projectType: '',
+          budget: '',
+          timeline: '',
+          message: ''
+        });
+      } else {
+        toast({
+          title: "❌ Error al enviar",
+          description: "Por favor intenta nuevamente.",
+          duration: 4000,
+        });
+      }
+    } catch (error) {
       toast({
-        title: "❌ Error al enviar",
-        description: "Por favor intenta nuevamente.",
+        title: "⚠️ Error de conexión",
+        description: "No se pudo enviar el formulario.",
         duration: 4000,
       });
     }
-  } catch (error) {
-    toast({
-      title: "⚠️ Error de conexión",
-      description: "No se pudo enviar el formulario.",
-      duration: 4000,
-    });
-  }
-};
+  };
 
   const handleWhatsApp = () => {
     const phoneNumber = "5493513728365"; // número con código de país (sin + ni espacios)
@@ -134,8 +134,8 @@ const handleSubmit = async (e) => {
   return (
     <div className="pt-16 lg:pt-20 overflow-x-hidden">
       <Helmet>
-        <title>Contacto - Mader Casa | Consulta tu Proyecto CLT</title>
-        <meta name="description" content="Contacta con Mader Casa para tu proyecto CLT. Oficina en CBA, consultas técnicas gratuitas. Teléfono, email y formulario de contacto disponibles." />
+        <title>Contacto - Mader Casa | Consulta tu Proyecto</title>
+        <meta name="description" content="Contacta con Mader Casa para tu proyecto constructivo. Oficina en CBA, consultas técnicas gratuitas. Teléfono, email y formulario de contacto disponibles." />
       </Helmet>
 
       {/* Hero Section */}
@@ -158,7 +158,7 @@ const handleSubmit = async (e) => {
             </h1>
 
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Estamos aquí para hacer realidad tu proyecto CLT. Consulta técnica gratuita,
+              Estamos aquí para hacer realidad tu vivienda propia. Consulta técnica gratuita,
               asesoramiento personalizado y presupuestos sin compromiso.
             </p>
           </motion.div>
@@ -207,7 +207,7 @@ const handleSubmit = async (e) => {
                 </h2>
                 <p className="text-gray-600">
                   Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas
-                  para discutir tu proyecto CLT.
+                  para discutir tu vivienda.
                 </p>
               </div>
 
@@ -413,17 +413,18 @@ const handleSubmit = async (e) => {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-white-800 mb-2">¿Cuánto tiempo toma un proyecto?</h4>
-                    <p className="text-gray-600 text-sm">Desde el diseño hasta la entrega: 3-6 meses dependiendo del tamaño y complejidad.</p>
+                    <p className="text-gray-600 text-sm">Desde el diseño hasta la entrega: 1-4 meses dependiendo del tamaño y complejidad.</p>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-white-800 mb-2">¿Incluyen los permisos?</h4>
-                    <p className="text-gray-600 text-sm">Sí, gestionamos todos los permisos municipales y documentación técnica necesaria.</p>
+                    <h4 className="font-semibold text-white-800 mb-2">¿Ofrecen financiación para construir?</h4>
+                    <p className="text-gray-600 text-sm">Sí. Ofrecemos financiación directa con nosotros, sujeta a requisitos de garantía,
+                      y también trabajamos con líneas de crédito Bancor del Banco de Córdoba.</p>
                   </div>
 
                   <div>
                     <h4 className="font-semibold text-white-800 mb-2">¿Qué garantía ofrecen?</h4>
-                    <p className="text-gray-600 text-sm">10 años en estructura CLT, 2 años en terminaciones y 1 año en instalaciones.</p>
+                    <p className="text-gray-600 text-sm">10 años en construcciones llave en mano, 2 años en Obra gris</p>
                   </div>
                 </div>
               </div>
@@ -446,7 +447,7 @@ const handleSubmit = async (e) => {
             </h2>
             <p className="text-xl mb-8 opacity-90">
               Nuestro equipo técnico está disponible para responder todas tus consultas
-              sobre construcción CLT de lunes a viernes.
+              sobre construcción de lunes a sábados.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

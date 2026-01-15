@@ -55,218 +55,219 @@ const Models = () => {
     { id: 'luxury', label: 'Premium' }
   ];
 
-  const models = [
-    {
-      id: 1,
-      name: "Modulos habitacionales",
-      category: "compact",
-      price: "Desde $8.000 USD",
-      area: "18 m²",
-      bedrooms: 1,
-      bathrooms: 1,
-      buildTime: "3 semanas (Obra gris)",
-      description: "Diseño modular moderno",
-      features: ["Luminosa", "Cocina integrada", "Mono ambiente", "Confort"],
-      image: img1,
-      plan: plan1
-    },
-    {
-      id: 2,
-      name: "Cabaña Moderna",
-      category: "compact",
-      price: "Desde $18.000 USD",
-      area: "40.5 m²",
-      bedrooms: 1,
-      bathrooms: 1,
-      buildTime: "3 semanas (Obra gris)",
-      description: "Perfecta para parejas o como casa de fin de semana en entornos naturales",
-      features: ["Diseño minimalista", "Ventanales panorámicos", "Loft opcional", "Deck exterior"],
-      image: img2,
-      plan: plan2
-    },
-    {
-      id: 3,
-      name: "Mader Casa 4",
-      category: "family",
-      price: "Desde $41.000 USD",
-      area: "93 m²",
-      bedrooms: 2,
-      bathrooms: 1,
-      buildTime: "4 semanas (Obra gris)",
-      description: "Máximo lujo y confort con terminaciones premium y tecnología integrada",
-      features: ["Confort", "Espacios amplios", "Garage para coche"],
-      image: img3,
-      plan: plan3
-    },
-    {
-      id: 4,
-      name: "MC 2",
-      category: "family",
-      price: "Desde $30.000 USD",
-      area: "68.5 m²",
-      bedrooms: 2,
-      bathrooms: 1,
-      buildTime: "4 semanas (Obra gris)",
-      description: "Construcción ideal para familias pequeñas",
-      features: ["Espacio multifuncional", "Cocina americana", "Iluminación natural"],
-      image: img4,
-      plan: plan4
-    },
-    {
-      id: 5,
-      name: "Casa Familiar Plus",
-      category: "family",
-      price: "Desde $27.000 USD",
-      area: "68 m²",
-      bedrooms: 2,
-      bathrooms: 1,
-      buildTime: "4 semanas (Obra gris)",
-      description: "Casa familiar ultra moderna con espacios flexibles y gran área social",
-      features: ["Sala de estar doble altura", "Cocina isla central",],
-      image: img5,
-      plan: plan5
-    },
-    {
-      id: 6,
-      name: "Refugio Alpino",
-      category: "luxury",
-      price: "Desde $50.000 USD",
-      area: "117 m²",
-      bedrooms: 2,
-      bathrooms: 1,
-      buildTime: "5 semanas",
-      description: "Inspirada en chalets alpinos con máximo aislamiento térmico",
-      features: ["Cocina comedor amplio", "vestidor en habitación", "Galería", "Aislamiento superior"],
-      image: img6,
-      plan: plan6
-    },
-    {
-      id: 7,
-      name: "Mader Casa 3",
-      category: "family",
-      price: "Desde $35.000 USD",
-      area: "82.5 m²",
-      bedrooms: 2,
-      bathrooms: 1,
-      buildTime: "4 semanas",
-      description: "Inspirada en viviendas americanas",
-      features: ["Cocina comedor con desayunador isla", "Diseño americano", "Aislamiento superior"],
-      image: img7,
-      plan: plan7
-    },
-    {
-      id: 8,
-      name: "Mader Casa F",
-      category: "family",
-      price: "Desde $50.000 USD",
-      area: "117 m²",
-      bedrooms: 2,
-      bathrooms: 1,
-      buildTime: "5 semanas",
-      description: "Vivienda familiar minimalista y moderna",
-      features: ["Cocina comedor amplio", "vestidor en habitación", "Galería para coche", "Aislamiento superior"],
-      image: img8,
-      plan: plan8
-    },
-    {
-      id: 9,
-      name: "Refugio Alpino",
-      category: "luxury",
-      price: "Desde $50.000 USD",
-      area: "117 m²",
-      bedrooms: 2,
-      bathrooms: 1,
-      buildTime: "5 semanas",
-      description: "Inspirada en chalets alpinos con máximo aislamiento térmico",
-      features: ["Cocina comedor amplio", "vestidor en habitación", "Galería", "Aislamiento superior"],
-      image: img9,
-      plan: plan9
-    },
-    {
-      id: 10,
-      name: "Refugio Alpino",
-      category: "luxury",
-      price: "Desde $50.000 USD",
-      area: "39.5 m²",
-      bedrooms: 2,
-      bathrooms: 1,
-      buildTime: "5 semanas",
-      description: "Inspirada en chalets alpinos con máximo aislamiento térmico",
-      features: ["Cocina comedor amplio", "vestidor en habitación", "Galería", "Aislamiento superior"],
-      image: img10,
-      plan: plan10
-    },
-    {
-      id: 11,
-      name: "Complejo habitacional",
-      category: "compact",
-      price: "Desde $12.000 USD",
-      area: "27 m²",
-      bedrooms: 1,
-      bathrooms: 1,
-      buildTime: "3 semanas",
-      description: "Modulos habitacionales, totalmente funcionales y confortables",
-      features: ["Cocina comedor ", "Aislamiento superior", "iluminación ambiental"],
-      image: img11,
-      plan: plan11
-    },
-    {
-      id: 12,
-      name: "H1 Mader Casa",
-      category: "family",
-      price: "Desde $60.000 USD",
-      area: "125.5 m²",
-      bedrooms: 3,
-      bathrooms: 2,
-      buildTime: "9 semanas",
-      description: "Vivienda familiar, totalmente funcional y confortable, minimalista",
-      features: ["Aislamiento superior", "iluminación ambiental", "Vestidor en habitación", "Cocina - Comedor amplio"],
-      image: img12,
-      plan: plan12
-    },
-    {
-      id: 13,
-      name: "H2 Mader Casa",
-      category: "luxury",
-      price: "Desde $68.000 USD",
-      area: "139.5 m²",
-      bedrooms: 3,
-      bathrooms: 2,
-      buildTime: "9 semanas",
-      description: "Vivienda familiar, totalmente funcional y confortable",
-      features: ["Aislamiento superior", "iluminación ambiental", "Vestidor en habitación", "Cocina - Comedor amplio"],
-      image: img13,
-      plan: plan13
-    },
-    {
-      id: 14,
-      name: "H3 Mader Casa",
-      category: "luxury",
-      price: "Desde $69.000 USD",
-      area: "140.5 m²",
-      bedrooms: 3,
-      bathrooms: 2,
-      buildTime: "10 semanas",
-      description: "Hermosa vivienda, totalmente funcional y confortable",
-      features: ["Aislamiento superior", "iluminación ambiental", "Vestidor en habitación", "Cocina - Comedor amplio"],
-      image: img14,
-      plan: plan14
-    },
-    {
-      id: 15,
-      name: "H4 Mader Casa",
-      category: "family",
-      price: "Desde $62.000 USD",
-      area: "128 m²",
-      bedrooms: 3,
-      bathrooms: 2,
-      buildTime: "9 semanas",
-      description: "Hermosa vivienda, totalmente funcional y confortable",
-      features: ["Aislamiento superior", "iluminación ambiental", "Vestidor en habitación", "Cocina - Comedor amplio"],
-      image: img15,
-      plan: plan15
-    }
-  ];
+ const models = [
+  {
+    id: 1,
+    name: "MC1",
+    category: "compact",
+    area: "18 m²",
+    bedrooms: 1,
+    bathrooms: 1,
+    buildTime: "3 semanas (Obra gris)",
+    description:
+      "Espacio compacto y funcional que redefine la comodidad moderna. Ideal para un estilo de vida simple, eficiente y conectado con el entorno.",
+    features: ["Diseño moderno", "Cocina integrada", "Monoambiente luminoso", "Confort térmico"],
+    image: img1,
+    plan: plan1
+  },
+  {
+    id: 2,
+    name: "MC2",
+    category: "compact",
+    area: "40.5 m²",
+    bedrooms: 1,
+    bathrooms: 1,
+    buildTime: "3 semanas (Obra gris)",
+    description:
+      "Cabaña contemporánea pensada para disfrutar de la naturaleza con estilo. Perfecta para escapadas, alquiler turístico o como primera vivienda.",
+    features: ["Diseño minimalista", "Ventanales panorámicos", "Deck exterior", "Ambiente cálido y natural"],
+    image: img2,
+    plan: plan2
+  },
+  {
+    id: 3,
+    name: "MC3",
+    category: "family",
+    area: "93 m²",
+    bedrooms: 2,
+    bathrooms: 1,
+    buildTime: "4 semanas (Obra gris)",
+    description:
+      "Vivienda moderna que combina calidez, amplitud y diseño. Espacios pensados para disfrutar cada momento en familia.",
+    features: ["Ambientes amplios", "Espacios conectados", "Garage funcional", "Estilo contemporáneo"],
+    image: img3,
+    plan: plan3
+  },
+  {
+    id: 4,
+    name: "MC4",
+    category: "family",
+    area: "68.5 m²",
+    bedrooms: 2,
+    bathrooms: 1,
+    buildTime: "4 semanas (Obra gris)",
+    description:
+      "Diseño funcional y acogedor que optimiza cada metro cuadrado. Ideal para familias jóvenes que buscan independencia y confort.",
+    features: ["Espacio multifuncional", "Cocina americana", "Gran iluminación natural", "Ambiente cálido"],
+    image: img4,
+    plan: plan4
+  },
+  {
+    id: 5,
+    name: "MC5",
+    category: "family",
+    area: "68 m²",
+    bedrooms: 2,
+    bathrooms: 1,
+    buildTime: "4 semanas (Obra gris)",
+    description:
+      "Una vivienda familiar moderna con espacios versátiles y una amplia zona social que invita a compartir y disfrutar.",
+    features: ["Sala de estar doble altura", "Cocina con isla central", "Diseño flexible", "Ambientes luminosos"],
+    image: img5,
+    plan: plan5
+  },
+  {
+    id: 6,
+    name: "LX1",
+    category: "luxury",
+    area: "117 m²",
+    bedrooms: 2,
+    bathrooms: 1,
+    buildTime: "5 semanas",
+    description:
+      "Inspirada en los chalets alpinos, combina diseño, confort y eficiencia térmica. Un refugio elegante para disfrutar todo el año.",
+    features: ["Cocina comedor amplio", "Vestidor en habitación", "Galería exterior", "Aislamiento superior"],
+    image: img6,
+    plan: plan6
+  },
+  {
+    id: 7,
+    name: "MC6",
+    category: "family",
+    area: "82.5 m²",
+    bedrooms: 2,
+    bathrooms: 1,
+    buildTime: "4 semanas",
+    description:
+      "Inspirada en las viviendas americanas, combina amplitud, calidez y estilo. Ideal para quienes valoran la vida en familia.",
+    features: ["Cocina con desayunador isla", "Diseño americano", "Excelente aislación", "Espacios integrados"],
+    image: img7,
+    plan: plan7
+  },
+  {
+    id: 8,
+    name: "MC7",
+    category: "family",
+    area: "117 m²",
+    bedrooms: 2,
+    bathrooms: 1,
+    buildTime: "5 semanas",
+    description:
+      "Vivienda moderna y minimalista que equilibra estética y funcionalidad. Pensada para disfrutar de la vida familiar con estilo.",
+    features: ["Cocina comedor amplio", "Vestidor principal", "Galería para coche", "Aislamiento superior"],
+    image: img8,
+    plan: plan8
+  },
+  {
+    id: 9,
+    name: "LX2",
+    category: "luxury",
+    area: "87.5 m²",
+    bedrooms: 2,
+    bathrooms: 2,
+    buildTime: "5 semanas",
+    description:
+      "Refugio moderno que combina materiales nobles y diseño sustentable. Elegancia y confort en un entorno natural.",
+    features: ["Cocina comedor amplio", "Vestidor", "Galería exterior", "Eficiencia térmica superior"],
+    image: img9,
+    plan: plan9
+  },
+  {
+    id: 10,
+    name: "MC8",
+    category: "luxury",
+    area: "39.5 m²",
+    bedrooms: 1,
+    bathrooms: 1,
+    buildTime: "5 semanas",
+    description:
+      "Diseño compacto con espíritu premium. Ideal como segunda vivienda o refugio moderno en entornos naturales.",
+    features: ["Cocina integrada", "Vestidor en suite", "Espacios cálidos", "Aislamiento superior"],
+    image: img10,
+    plan: plan10
+  },
+  {
+    id: 11,
+    name: "MC9",
+    category: "compact",
+    area: "27 m²",
+    bedrooms: 1,
+    bathrooms: 1,
+    buildTime: "3 semanas",
+    description:
+      "Módulo funcional y confortable que se adapta a distintos usos: vivienda, oficina o proyecto turístico.",
+    features: ["Cocina comedor integrada", "Excelente aislamiento", "Iluminación ambiental", "Diseño flexible"],
+    image: img11,
+    plan: plan11
+  },
+  {
+    id: 12,
+    name: "H1",
+    category: "family",
+    area: "125.5 m²",
+    bedrooms: 3,
+    bathrooms: 2,
+    buildTime: "9 semanas",
+    description:
+      "Vivienda familiar amplia, elegante y funcional. Espacios diseñados para disfrutar el confort y la calidez del hogar.",
+    features: ["Aislamiento superior", "Iluminación natural", "Vestidor principal", "Cocina - Comedor amplio"],
+    image: img12,
+    plan: plan12
+  },
+  {
+    id: 13,
+    name: "H2",
+    category: "luxury",
+    area: "139.5 m²",
+    bedrooms: 3,
+    bathrooms: 2,
+    buildTime: "9 semanas",
+    description:
+      "Vivienda de alta gama con diseño contemporáneo y materiales nobles. Cada espacio está pensado para el bienestar.",
+    features: ["Aislamiento superior", "Luz natural", "Vestidor en habitación", "Cocina - Comedor amplio"],
+    image: img13,
+    plan: plan13
+  },
+  {
+    id: 14,
+    name: "H3",
+    category: "luxury",
+    area: "140.5 m²",
+    bedrooms: 3,
+    bathrooms: 2,
+    buildTime: "10 semanas",
+    description:
+      "Arquitectura moderna, espacios amplios y una estética sobria. Una casa que combina diseño, confort y naturaleza.",
+    features: ["Aislamiento superior", "Iluminación ambiental", "Vestidor en habitación", "Cocina - Comedor amplio"],
+    image: img14,
+    plan: plan14
+  },
+  {
+    id: 15,
+    name: "H4",
+    category: "family",
+    area: "128 m²",
+    bedrooms: 3,
+    bathrooms: 2,
+    buildTime: "9 semanas",
+    description:
+      "Hogar contemporáneo y cálido, donde cada ambiente refleja equilibrio, diseño y confort.",
+    features: ["Aislamiento térmico", "Ambientes luminosos", "Vestidor en habitación", "Cocina - Comedor amplio"],
+    image: img15,
+    plan: plan15
+  }
+];
+
 
   const filteredModels = selectedCategory === 'all'
     ? models
@@ -294,7 +295,7 @@ const Models = () => {
   return (
     <div className="pt-16 lg:pt-20 overflow-x-hidden">
       <Helmet>
-        <title>Modelos - Mader Casa | Viviendas CLT Personalizadas</title>
+        <title>Modelos - Mader Casa | Viviendas Personalizadas</title>
         <meta name="description" content="Descubre nuestros modelos de casas CLT: familiares, compactas y premium. Viviendas modulares con sistema alemán, desde 45m² hasta 200m². Construcción rápida y sustentable." />
       </Helmet>
 
@@ -312,13 +313,13 @@ const Models = () => {
             </span>
 
             <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">
-              <span className="text-gradient">Viviendas CLT</span>
+              <span className="text-gradient">Viviendas industrializadas</span>
               <br />
               <span className="text-gray-800">Personalizadas</span>
             </h1>
 
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Desde estudios compactos hasta villas premium. Cada modelo puede personalizarse
+              Desde estudios compactos hasta complejos turísticos. Cada modelo puede personalizarse
               completamente para adaptarse a tus necesidades y estilo de vida.
             </p>
           </motion.div>
@@ -373,11 +374,11 @@ const Models = () => {
                     </span>
                   </div>
 
-                  <div className="absolute top-4 right-4">
+                  {/* <div className="absolute top-4 right-4">
                     <span className="px-3 py-1 bg-black/70 text-white rounded-full text-sm font-semibold">
                       {model.price}
                     </span>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="p-8 bg-[#f0f8ff]">
@@ -534,7 +535,7 @@ const Models = () => {
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="glass-effect rounded-lg p-4">
                     <h3 className="text-white font-semibold text-lg">Diseño a Medida</h3>
-                    <p className="text-white/90 text-sm">Cada detalle pensado para ti</p>
+                    <p className="text-white/90 text-sm">Cada detalle pensado para tu comodidad</p>
                   </div>
                 </div>
               </div>
@@ -557,7 +558,7 @@ const Models = () => {
             </h2>
             <p className="text-black text-xl mb-8 opacity-90">
               Creamos diseños únicos desde cero. Cuéntanos tu visión y la haremos realidad
-              con la calidad y sustentabilidad del sistema CLT.
+              con la calidad y sustentabilidad del sistema WoodFrame.
             </p>
 
             <Button

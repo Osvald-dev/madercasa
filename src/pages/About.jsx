@@ -22,7 +22,7 @@ const About = () => {
     {
       icon: Building,
       title: "Innovación",
-      description: "Tecnología CLT de vanguardia para construcciones del futuro"
+      description: "Tecnología Woodframe de vanguardia para construcciones del futuro"
     },
     {
       icon: Users,
@@ -39,8 +39,8 @@ const About = () => {
     },
     {
       year: "2021",
-      title: "Tecnología CLT",
-      description: "Incorporamos el sistema alemán Cross Laminated Timber"
+      title: "Tecnología Woodframe",
+      description: "Incorporamos el sistema americano WoodFrame"
     },
     {
       year: "2022",
@@ -55,15 +55,15 @@ const About = () => {
     {
       year: "2024",
       title: "Liderazgo",
-      description: "Nos consolidamos como pioneros en construcción CLT en Argentina"
+      description: "Nos consolidamos como lideres en construcción en seco en Argentina"
     }
   ];
 
   return (
     <div className="pt-16 lg:pt-20 overflow-x-hidden">
       <Helmet>
-        <title>Nosotros - Mader Casa | Pioneros en Construcción CLT</title>
-        <meta name="description" content="Conoce la historia de Mader Casa, pioneros en Argentina en construcción con sistema CLT alemán. Nuestra misión, visión y compromiso con la innovación sustentable." />
+        <title>Nosotros - Mader Casa | Especialistas en Construcción Wood Frame</title>
+        <meta name="description" content="Conocé la historia de Mader Casa, empresa argentina especializada en construcción en seco con sistema Wood Frame. Diseño, eficiencia y compromiso con la calidad." />
       </Helmet>
 
       {/* Hero Section */}
@@ -82,14 +82,14 @@ const About = () => {
                 </span>
 
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                  <span className="text-gradient">Pioneros en</span>
+                  <span className="text-gradient">Especialistas en</span>
                   <br />
-                  <span className="text-white-800">Construcción CLT</span>
+                  <span className="text-white-800">Sistema Wood Frame</span>
                 </h1>
 
                 <p className="text-xl text-white-600 leading-relaxed">
-                  Somos la primera empresa en Argentina especializada en construcción con sistema CLT alemán.
-                  Combinamos tradición europea con innovación local para crear hogares excepcionales.
+                  Somos una empresa argentina especializada en construcción en seco con sistema Wood Frame.
+                  Combinamos diseño, tecnología y procesos eficientes para crear hogares cálidos, funcionales y duraderos.
                 </p>
               </div>
             </motion.div>
@@ -102,7 +102,7 @@ const About = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-wood hover-lift">
                 <img
-                  alt="Equipo de Mader Casa trabajando en construcción CLT"
+                  alt="Equipo de Mader Casa trabajando en construcción en seco Wood Frame"
                   className="w-full h-[500px] object-cover"
                   src={imgD} />
 
@@ -131,16 +131,19 @@ const About = () => {
               </div>
 
               <p className="text-lg text-white-600 leading-relaxed">
-                Revolucionar la industria de la construcción en Argentina mediante la implementación
-                del sistema CLT alemán, ofreciendo viviendas sustentables, resistentes y de alta calidad
-                que respeten el medio ambiente y mejoren la calidad de vida de nuestros clientes.
+                Asentar y desarrollar la construcción en seco en Argentina, acercando a más personas
+                una forma de construir eficiente, accesible y confiable. Diseñamos y construimos
+                casas prefabricadas con sistema Wood Frame, destacando sus beneficios reales:
+                rapidez de obra, costos controlados, confort térmico y acústico, posibilidad de
+                ampliación y un mantenimiento simple y económico a lo largo del tiempo.
               </p>
 
               <div className="bg-gradient-to-r from-amber-100 to-white-100 p-6 rounded-xl">
                 <h3 className="font-semibold text-amber-800 mb-2">Compromiso Ambiental</h3>
                 <p className="text-amber-700">
-                  Cada proyecto contribuye a la reducción de la huella de carbono y promueve
-                  la construcción sustentable en Argentina.
+                  Trabajamos con sistemas constructivos que reducen desperdicios, optimizan el uso
+                  de materiales y minimizan el impacto ambiental, promoviendo una construcción
+                  más limpia, responsable y sustentable.
                 </p>
               </div>
             </motion.div>
@@ -160,9 +163,7 @@ const About = () => {
               </div>
 
               <p className="text-lg text-white-600 leading-relaxed">
-                Ser la empresa líder en construcción CLT en Latinoamérica, reconocida por la
-                excelencia en diseño, calidad constructiva y compromiso ambiental, estableciendo
-                nuevos estándares en la industria de la construcción sustentable.
+                Ser una empresa referente en construcción en seco, reconocida por la calidad constructiva, el diseño consciente y el compromiso con una arquitectura más eficiente y sustentable.
               </p>
 
               <div className="bg-gradient-to-r from-amber-100 to-white-100 p-6 rounded-xl">
@@ -220,7 +221,7 @@ const About = () => {
         </div>
       </section>
 
-    
+
 
       {/* Team Section */}
       <section className="section-padding bg-[#1e3448] relative overflow-hidden">
@@ -235,11 +236,9 @@ const About = () => {
               Nuestro Equipo
             </h2>
             <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
-              En <strong>Mader Casa</strong> contamos con un equipo multidisciplinario de
-              ingenieros, arquitectos y especialistas en construcción sustentable.
-              Combinamos experiencia técnica, innovación y pasión por el diseño para
-              crear viviendas eficientes, seguras y duraderas bajo el sistema{" "}
-              <strong>CLT (Cross Laminated Timber)</strong>.
+              En <strong>Mader Casa</strong> contamos con un equipo multidisciplinario de arquitectos, asesores y especialistas en construcción en seco.
+              Combinamos experiencia técnica, planificación y diseño para desarrollar viviendas eficientes, seguras y duraderas mediante el sistema{" "}
+              <strong>Wood Frame</strong>.
             </p>
           </motion.div>
 
@@ -254,7 +253,7 @@ const About = () => {
               {
                 role: "Ingeniería y Estructura",
                 specialty:
-                  "Cálculo estructural y eficiencia constructiva con tecnología CLT de última generación.",
+                  "Cálculo estructural y eficiencia constructiva aplicados a la vivienda, garantizando solidez, precisión y previsibilidad en obra.",
                 image: img2,
               },
               {

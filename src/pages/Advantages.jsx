@@ -18,7 +18,7 @@ const Advantages = () => {
     {
       icon: TreePine,
       title: "100% Sustentable",
-      description: "Madera certificada FSC de bosques gestionados responsablemente",
+      description: "Madera certificada de bosques gestionados responsablemente",
       details: [
         "Captura de CO2 durante toda la vida útil",
         "Material renovable y biodegradable",
@@ -29,11 +29,11 @@ const Advantages = () => {
     {
       icon: Shield,
       title: "Resistencia Superior",
-      description: "Estructura más resistente que el hormigón armado",
+      description: "Estructuras resistentes",
       details: [
-        "Resistencia sísmica excepcional",
+        "Resistencia sísmica",
         "Comportamiento superior ante incendios",
-        "Durabilidad de más de 100 años",
+        "Durabilidad de 100 años",
         "Resistencia a vientos extremos"
       ]
     },
@@ -45,7 +45,7 @@ const Advantages = () => {
         "Reducción del 80% en costos de climatización",
         "Confort térmico constante todo el año",
         "Eliminación de puentes térmicos",
-        "Certificación Passivhaus disponible"
+        "Certificación disponible"
       ]
     },
     {
@@ -53,7 +53,7 @@ const Advantages = () => {
       title: "Construcción Rápida",
       description: "Tiempos de construcción reducidos hasta 70%",
       details: [
-        "Fabricación en taller controlado",
+        "Prefabricación de módulos en nuestro galpón abierto al público",
         "Montaje en obra en pocas semanas",
         "Menor dependencia del clima",
         "Planificación precisa de tiempos"
@@ -150,8 +150,8 @@ const Advantages = () => {
   return (
     <div className="pt-16 lg:pt-20 overflow-x-hidden">
       <Helmet>
-        <title>Ventajas CLT - Mader Casa | Sistema Alemán Cross Laminated Timber</title>
-        <meta name="description" content="Descubre las ventajas del sistema CLT: 100% sustentable, resistencia superior, aislamiento térmico excepcional y construcción 70% más rápida. Tecnología alemana en Argentina." />
+        <title>Ventajas de Construir con Madera - Mader Casa | Construcción en Seco</title>
+        <meta name="description" content="Conocé las ventajas de la construcción en madera: eficiencia energética, rapidez de obra, confort y sustentabilidad. Una forma moderna y responsable de construir." />
       </Helmet>
 
       {/* Hero Section */}
@@ -166,18 +166,18 @@ const Advantages = () => {
             >
               <div className="space-y-4">
                 <span className="inline-block px-4 py-2 bg-[#af823c] hover:bg-[#8b6032] text-white-800 rounded-full text-sm font-semibold">
-                  🌲 Tecnología CLT
+                  🌲 Sistema Woodframe
                 </span>
 
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                  <span className="text-gradient">Ventajas del</span>
+                  <span className="text-gradient">Ventajas de construir con</span>
                   <br />
-                  <span className="text-gray-800">Sistema CLT</span>
+                  <span className="text-gray-800">Mader Casa</span>
                 </h1>
 
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  El Cross Laminated Timber representa la evolución de la construcción en madera.
-                  Descubre por qué es la elección del futuro para construcción sustentable.
+                  La construcción en madera representa una evolución en la forma de diseñar y habitar los espacios.
+                  Una alternativa moderna, económica y eficiente frente a los sistemas tradicionales.
                 </p>
               </div>
             </motion.div>
@@ -190,7 +190,7 @@ const Advantages = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-wood hover-lift">
                 <img
-                  alt="Estructura CLT mostrando capas de madera laminada cruzada"
+                  alt="Estructura de vivienda en construcción en madera"
                   className="w-full h-[500px] object-cover"
                   src={imgF} />
 
@@ -198,8 +198,8 @@ const Advantages = () => {
 
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="glass-effect rounded-lg p-4">
-                    <h3 className="text-white font-semibold text-lg">Cross Laminated Timber</h3>
-                    <p className="text-white/90 text-sm">Tecnología alemana de vanguardia</p>
+                    <h3 className="text-white font-semibold text-lg">Construcción en Madera</h3>
+                    <p className="text-white/90 text-sm">Tecnología moderna y eficiente</p>
                   </div>
                 </div>
               </div>
@@ -218,10 +218,10 @@ const Advantages = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl lg:text-5xl font-bold text-gradient mb-6">
-              ¿Por qué elegir CLT?
+              ¿Por qué elegir la construcción en seco?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Seis razones fundamentales que hacen del CLT la mejor opción para tu próximo proyecto
+              Seis razones que explican por qué la madera es una de las mejores opciones para construir hoy
             </p>
           </motion.div>
 
@@ -270,10 +270,10 @@ const Advantages = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl lg:text-5xl font-bold text-gradient mb-6">
-              CLT vs Construcción Tradicional
+              WoodFrame vs Construcción Tradicional
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comparación directa que demuestra la superioridad del sistema CLT
+              Comparación directa que demuestra la superioridad del sistema WoodFrame
             </p>
           </motion.div>
 
@@ -284,7 +284,7 @@ const Advantages = () => {
                   <tr>
                     <th className="px-6 py-4 text-left font-semibold">Aspecto</th>
                     <th className="px-6 py-4 text-center font-semibold">Construcción Tradicional</th>
-                    <th className="px-6 py-4 text-center font-semibold">Sistema CLT</th>
+                    <th className="px-6 py-4 text-center font-semibold">Sistema WoodFrame</th>
                     <th className="px-6 py-4 text-center font-semibold">Mejora</th>
                   </tr>
                 </thead>
@@ -326,13 +326,12 @@ const Advantages = () => {
               className="space-y-6"
             >
               <h2 className="text-3xl lg:text-4xl font-bold text-gradient">
-                Tecnología Alemana Probada
+                Eficiencia Constructiva en Madera
               </h2>
 
               <p className="text-lg text-gray-600">
-                El sistema CLT fue desarrollado en Austria y Alemania en los años 90.
-                Hoy es el estándar de construcción sustentable en Europa, con más de
-                30 años de experiencia y miles de proyectos exitosos.
+                La construcción en madera moderna combina técnicas tradicionales con procesos industrializados.
+                Es un sistema probado a nivel mundial, elegido por su eficiencia, bajos costos, confort y durabilidad.
               </p>
 
               <div className="space-y-4">
@@ -341,8 +340,8 @@ const Advantages = () => {
                     <Building size={16} className="text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-800 mb-1">Estructura Multicapa</h3>
-                    <p className="text-gray-600">Capas de madera encoladas en direcciones perpendiculares para máxima resistencia</p>
+                    <h3 className="font-semibold text-gray-800 mb-1">Sistema estructural en madera</h3>
+                    <p className="text-gray-600">Aporta estabilidad, resistencia y precisión constructiva</p>
                   </div>
                 </div>
 
@@ -351,8 +350,8 @@ const Advantages = () => {
                     <Shield size={16} className="text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-800 mb-1">Precisión Milimétrica</h3>
-                    <p className="text-gray-600">Fabricación CNC con tolerancias de ±1mm para ensamblaje perfecto</p>
+                    <h3 className="font-semibold text-gray-800 mb-1">Pre Fabricación</h3>
+                    <p className="text-gray-600">Procesos industrializados que garantizan precisión, calidad y un ensamblaje eficiente en obra</p>
                   </div>
                 </div>
 
@@ -362,7 +361,7 @@ const Advantages = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-1">Calidad Controlada</h3>
-                    <p className="text-gray-600">Cada panel es inspeccionado y certificado antes del envío</p>
+                    <p className="text-gray-600">Control de calidad en cada etapa del proceso constructivo</p>
                   </div>
                 </div>
               </div>
@@ -376,7 +375,7 @@ const Advantages = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-wood hover-lift">
                 <img
-                  alt="Proceso de fabricación CLT con maquinaria CNC de precisión"
+                  alt="Proceso de fabricación y armado de estructuras de madera"
                   className="w-full h-[400px] object-cover"
                   src={imgE} />
 
@@ -384,8 +383,8 @@ const Advantages = () => {
 
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="glass-effect rounded-lg p-4">
-                    <h3 className="text-white font-semibold text-lg">Fabricación CNC</h3>
-                    <p className="text-white/90 text-sm">Precisión alemana en cada corte</p>
+                    <h3 className="text-white font-semibold text-lg">Procesos industrializados</h3>
+                    <p className="text-white/90 text-sm">Precisión y calidad en cada detalle</p>
                   </div>
                 </div>
               </div>
@@ -407,7 +406,7 @@ const Advantages = () => {
               Certificaciones y Estándares
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Nuestros proyectos CLT cumplen con los más altos estándares internacionales
+              Nuestros proyectos de construcción en WoodFraming cumplen con altos estándares de calidad y sustentabilidad
             </p>
           </motion.div>
 
@@ -447,7 +446,7 @@ const Advantages = () => {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-black text-3xl lg:text-4xl font-bold mb-6">
-              ¿Convencido de las ventajas del CLT?
+              ¿Convencido de las ventajas de construir con MaderCasa?
             </h2>
             <p className="text-xl mb-8 opacity-90">
               Descubre cómo podemos aplicar todas estas ventajas en tu próximo proyecto.

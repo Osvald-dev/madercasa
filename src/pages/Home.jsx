@@ -13,23 +13,23 @@ const Home = () => {
   const features = [
     {
       icon: TreePine,
-      title: "100% Sustentable",
-      description: "Madera certificada y procesos eco-amigables"
+      title: "Sistema constructivo eficiente",
+      description: "Muros compuestos por estructura de madera, aislaciones térmicas y placas técnicas que garantizan resistencia, confort y durabilidad."
     },
     {
       icon: Shield,
-      title: "Máxima Resistencia",
-      description: "Sistema CLT alemán de alta durabilidad"
+      title: "Confort térmico y acústico",
+      description: "Aislación con lana de vidrio y sistemas multicapa que mantienen una temperatura interior estable todo el año."
     },
     {
       icon: Zap,
-      title: "Construcción Rápida",
-      description: "Montaje eficiente y tiempos reducidos"
+      title: "Construcción en seco",
+      description: "Obra más limpia, rápida y precisa, con menor desperdicio de materiales y mayor control de calidad."
     },
     {
       icon: Award,
-      title: "Calidad Premium",
-      description: "Terminaciones de primera calidad"
+      title: "Flexibilidad de terminaciones",
+      description: "Diferentes líneas constructivas y revestimientos exteriores como placa cementicia, base coat, EPS u OSB, según el diseño elegido."
     }
   ];
 
@@ -56,21 +56,28 @@ const Home = () => {
                   transition={{ delay: 0.2 }}
                   className="inline-block px-4 py-2 bg-[#c49771]/30 text-[#c49771] backdrop-blur-sm rounded-full text-sm font-semibold"
                 >
-                  Pioneros en Argentina
+                  Construimos en todo el país
                 </motion.span>
 
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                  <span className="text-[#af823c]">Construcción del futuro</span>
+                  <span className="text-[#af823c]">Casas prefabricadas</span>
                   <br />
-                  <span className="text-black">Sistema CLT</span>
+                  <span className="text-black">con sistema Wood Frame</span>
                 </h1>
 
                 <p className="text-xl text-black/80 leading-relaxed">
-                  Revolucionamos la construcción con el sistema alemán CLT (Cross Laminated Timber). 
-                  Viviendas modulares, resistentes y sustentables que combinan innovación con naturaleza.
+                  Diseñamos y construimos viviendas prefabricadas en seco, utilizando el sistema Wood Frame.
+                  Nuestros muros combinan estructura de madera, aislación térmica, placas interiores de yeso y revestimientos exteriores técnicos, logrando hogares sólidos, eficientes y confortables.
                 </p>
               </div>
-
+              <div className="bg-[#af823c]/10 border border-[#af823c]/40 rounded-2xl py-8 text-center my-10">
+                <p className="text-2xl md:text-3xl text-[#af823c] font-medium">
+                  El m² desde <span className="font-semibold">$250.000</span>
+                </p>
+                <p className="text-[#5e5345] text-lg mt-2">
+                  Viviendas diseñadas para vivir mejor.
+                </p>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild className="bg-[#af823c] hover:bg-[#8b6032] text-white px-8 py-6 text-lg rounded-xl shadow-wood hover-lift">
                   <Link to="/modelos">
@@ -94,18 +101,18 @@ const Home = () => {
               className="relative"
             >
               <div className="relative rounded-2xl overflow-hidden shadow-wood hover-lift">
-                <img  
-                  alt="Casa moderna de madera CLT con diseño contemporáneo"
+                <img
+                  alt="Casa prefabricada con diseño minimalista"
                   className="w-full h-[500px] object-cover"
                   src={img1}
-                  />
+                />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
 
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="glass-effect rounded-lg p-4">
-                    <h3 className="text-white font-semibold text-lg">Sistema CLT Alemán</h3>
-                    <p className="text-white/90 text-sm">Muros entramados macizos de máxima calidad</p>
+                    <h3 className="text-white font-semibold text-lg">Sistema Woodframe</h3>
+                    <p className="text-white/90 text-sm">Construcción rápida, eficiente y económica.</p>
                   </div>
                 </div>
               </div>
@@ -136,8 +143,7 @@ const Home = () => {
               ¿Por qué elegir Mader Casa?
             </h2>
             <p className="text-xl text-[#5e5345] max-w-3xl mx-auto">
-              Combinamos la tradición alemana en construcción con madera y la innovación tecnológica 
-              para crear hogares excepcionales.
+              Construimos viviendas con sistemas constructivos modernos, combinando madera estructural y materiales técnicos que mejoran el confort térmico, la durabilidad y los tiempos de obra.
             </p>
           </motion.div>
 
@@ -189,17 +195,17 @@ const Home = () => {
               {
                 title: "Casa Familiar Moderna",
                 description: "Diseño contemporáneo con espacios amplios",
-                image:img2
+                image: img2
               },
               {
                 title: "Cabaña de Montaña",
                 description: "Perfecta integración con el entorno natural",
-                image:img3
+                image: img3
               },
               {
                 title: "Vivienda Modular",
                 description: "Flexibilidad y personalización total",
-                image:img4
+                image: img4
               }
             ].map((project, index) => (
               <motion.div
@@ -211,13 +217,13 @@ const Home = () => {
                 className="group cursor-pointer"
               >
                 <div className="relative rounded-2xl overflow-hidden shadow-wood hover-lift">
-                  <img  
+                  <img
                     alt={project.title}
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                   src={project.image}/>
-                  
+                    src={project.image} />
+
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  
+
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                     <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                     <p className="text-white/90">{project.description}</p>
@@ -244,7 +250,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-     <section className="section-padding bg-[#af823c] text-white">
+      <section className="section-padding bg-[#af823c] text-white">
         <div className="container-custom text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -256,8 +262,7 @@ const Home = () => {
               ¿Listo para construir tu hogar del futuro?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Descubre cómo el sistema CLT puede transformar tu visión en realidad. 
-              Contactanos para una consulta personalizada.
+              Construí tu casa con un sistema moderno, eficiente y confiable
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -269,7 +274,7 @@ const Home = () => {
 
               <Button asChild variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#af823c] px-8 py-6 text-lg rounded-xl">
                 <Link to="/ventajas">
-                  Conocer Ventajas CLT
+                  Conocer Ventajas
                 </Link>
               </Button>
             </div>

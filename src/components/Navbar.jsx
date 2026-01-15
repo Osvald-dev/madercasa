@@ -21,7 +21,7 @@ const Navbar = () => {
     { path: '/', label: 'Inicio', icon: Home },
     { path: '/nosotros', label: 'Nosotros', icon: Users },
     { path: '/modelos', label: 'Modelos', icon: Building },
-    { path: '/ventajas', label: 'Ventajas CLT', icon: Award },
+    { path: '/ventajas', label: 'Ventajas', icon: Award },
     { path: '/contacto', label: 'Contacto', icon: Phone },
   ];
 
