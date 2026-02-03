@@ -26,7 +26,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Teléfono",
-      info: "+54 9 3513 72-8365",
+      info: "+54 9 3512 12-2580",
       description: "Lunes a Viernes 9:00 - 18:00"
     },
     {

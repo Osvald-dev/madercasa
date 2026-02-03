@@ -6,7 +6,8 @@ const WhatsAppFloat = () => {
   const handleWhatsAppClick = () => {
     const numbers = [
       "5493512122580", // WhatsApp Oficina
-      "5493513728365"  // WhatsApp Asesor Técnico
+      "5493513728365", // Asesor
+      "5493515299470"  // WhatsApp Asesor Técnico
     ];
 
     // Elige uno de los números al azar

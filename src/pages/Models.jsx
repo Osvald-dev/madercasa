@@ -275,7 +275,7 @@ const Models = () => {
 
   // WhatsApp
   const handleContactModel = (modelName) => {
-    const phoneNumber = "5493513728365"; // tu número con código de país sin + ni espacios
+    const phoneNumber = "5493512122580"; // tu número con código de país sin + ni espacios
     const message = `¡Hola! Estoy interesado en recibir información sobre el modelo: ${modelName}.`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
